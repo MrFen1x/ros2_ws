@@ -1,6 +1,0 @@
-Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/talker -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/talker
-Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/talker -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/talker
-Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/talker -- -j8 -l8
-Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/talker -- -j8 -l8
-Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/talker
-Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/talker
