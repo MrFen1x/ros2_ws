@@ -1,0 +1,48 @@
+[1.569s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build
+[2.026s] running develop
+[2.366s] Removing /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples-rclpy-minimal-publisher.egg-link (link to .)
+[2.662s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build
+[2.663s] Invoking command in '/home/ilya/ros2_ws/src/examples/rclpy/topics/minimal_publisher': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build install --record /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed install_data --force
+[2.989s] running egg_info
+[3.022s] writing ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/PKG-INFO
+[3.023s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/dependency_links.txt
+[3.023s] writing entry points to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/entry_points.txt
+[3.023s] writing requirements to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/requires.txt
+[3.023s] writing top-level names to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/top_level.txt
+[3.084s] reading manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[3.086s] writing manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[3.086s] running build
+[3.086s] running build_py
+[3.087s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build
+[3.088s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib
+[3.088s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.089s] copying examples_rclpy_minimal_publisher/__init__.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.089s] copying examples_rclpy_minimal_publisher/publisher_member_function_with_wait_for_all_acked.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.090s] copying examples_rclpy_minimal_publisher/publisher_local_function.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.091s] copying examples_rclpy_minimal_publisher/publisher_member_function.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.091s] copying examples_rclpy_minimal_publisher/publisher_old_school.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[3.092s] running install
+[3.099s] running install_lib
+[3.133s] creating /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.135s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/__init__.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.136s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_member_function_with_wait_for_all_acked.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.136s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_local_function.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.136s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_member_function.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.136s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_old_school.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher
+[3.137s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher/__init__.py to __init__.cpython-312.pyc
+[3.138s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher/publisher_member_function_with_wait_for_all_acked.py to publisher_member_function_with_wait_for_all_acked.cpython-312.pyc
+[3.139s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher/publisher_local_function.py to publisher_local_function.cpython-312.pyc
+[3.140s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[3.141s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher/publisher_old_school.py to publisher_old_school.cpython-312.pyc
+[3.142s] running install_data
+[3.142s] copying resource/examples_rclpy_minimal_publisher -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/share/ament_index/resource_index/packages
+[3.142s] copying package.xml -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/share/examples_rclpy_minimal_publisher
+[3.143s] running install_egg_info
+[3.174s] Copying ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info to /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages/examples_rclpy_minimal_publisher-0.20.5-py3.12.egg-info
+[3.177s] running install_scripts
+[3.402s] Installing publisher_local_function script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[3.402s] Installing publisher_member_function script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[3.402s] Installing publisher_member_function_with_wait_for_all_acked script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[3.403s] Installing publisher_old_school script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[3.403s] writing list of installed files to '/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/install.log'
+[3.449s] Invoked command in '/home/ilya/ros2_ws/src/examples/rclpy/topics/minimal_publisher' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/build install --record /home/ilya/ros2_ws/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed install_data --force

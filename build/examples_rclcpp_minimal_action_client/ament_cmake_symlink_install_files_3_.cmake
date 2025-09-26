@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/actions/minimal_action_client" FILES "/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/examples_rclcpp_minimal_action_client/environment")

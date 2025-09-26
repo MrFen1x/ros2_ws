@@ -1,0 +1,10 @@
+/home/ilya/ros2_ws/build/talker/CMakeFiles/uninstall.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/talker_uninstall.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/talker_node.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/test.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/edit_cache.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/rebuild_cache.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/list_install_components.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/install.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/install/local.dir
+/home/ilya/ros2_ws/build/talker/CMakeFiles/install/strip.dir

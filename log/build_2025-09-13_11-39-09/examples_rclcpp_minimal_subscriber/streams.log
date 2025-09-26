@@ -1,0 +1,110 @@
+[0.091s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber
+[0.373s] -- The C compiler identification is GNU 13.3.0
+[0.854s] -- The CXX compiler identification is GNU 13.3.0
+[1.256s] -- Detecting C compiler ABI info
+[1.519s] -- Detecting C compiler ABI info - done
+[1.530s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.531s] -- Detecting C compile features
+[1.531s] -- Detecting C compile features - done
+[1.596s] -- Detecting CXX compiler ABI info
+[1.854s] -- Detecting CXX compiler ABI info - done
+[1.862s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.863s] -- Detecting CXX compile features
+[1.863s] -- Detecting CXX compile features - done
+[1.885s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[2.142s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.242s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.281s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[2.403s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[2.419s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[2.461s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.490s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.644s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[2.662s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[2.929s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.955s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.208s] -- Found rclcpp_components: 29.5.2 (/opt/ros/kilted/share/rclcpp_components/cmake)
+[3.331s] -- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+[3.383s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[3.570s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.573s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.573s] -- Configured cppcheck include dirs: 
+[3.573s] -- Configured cppcheck exclude dirs and/or files: 
+[3.580s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.580s] -- Configured cpplint exclude dirs and/or files: 
+[3.586s] -- Added test 'lint_cmake' to check CMake code style
+[3.588s] -- Added test 'uncrustify' to check C / C++ code style
+[3.588s] -- Configured uncrustify additional arguments: 
+[3.594s] -- Added test 'xmllint' to check XML markup files
+[3.602s] -- Configuring done (3.5s)
+[3.660s] -- Generating done (0.0s)
+[3.674s] -- Build files have been written to: /home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber
+[3.695s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber
+[3.695s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j8 -l8
+[3.807s] [  4%] [32mBuilding CXX object CMakeFiles/subscriber_not_composable.dir/not_composable.cpp.o[0m
+[3.813s] [  8%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_topic_statistics.dir/member_function_with_topic_statistics.cpp.o[0m
+[3.824s] [ 12%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o[0m
+[3.824s] [ 16%] [32mBuilding CXX object CMakeFiles/subscriber_lambda.dir/lambda.cpp.o[0m
+[3.834s] [ 20%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/wait_set_subscriber.cpp.o[0m
+[3.835s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber_member_function.dir/member_function.cpp.o[0m
+[3.838s] [ 29%] [32mBuilding CXX object CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o[0m
+[3.867s] [ 33%] [32mBuilding CXX object CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o[0m
+[29.076s] [ 37%] [32m[1mLinking CXX executable subscriber_lambda[0m
+[29.704s] [ 37%] Built target subscriber_lambda
+[30.060s] [ 41%] [32m[1mLinking CXX executable subscriber_not_composable[0m
+[30.159s] [ 45%] [32m[1mLinking CXX executable subscriber_member_function_with_unique_network_flow_endpoints[0m
+[30.180s] [ 50%] [32m[1mLinking CXX executable subscriber_member_function_with_topic_statistics[0m
+[30.500s] [ 54%] [32m[1mLinking CXX executable subscriber_member_function[0m
+[30.704s] [ 58%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o[0m
+[30.770s] [ 62%] [32m[1mLinking CXX executable subscriber_member_function_with_type_adapter[0m
+[30.794s] [ 62%] Built target subscriber_not_composable
+[30.812s] [ 62%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[30.858s] [ 62%] Built target subscriber_member_function_with_topic_statistics
+[31.000s] [ 62%] Built target subscriber_member_function
+[31.180s] [ 62%] Built target subscriber_member_function_with_type_adapter
+[31.433s] [ 66%] [32m[1mLinking CXX executable subscriber_content_filtering[0m
+[31.745s] [ 66%] Built target subscriber_content_filtering
+[37.790s] [ 70%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o[0m
+[44.895s] [ 75%] [32m[1mLinking CXX shared library libwait_set_subscriber_library.so[0m
+[45.289s] [ 75%] Built target wait_set_subscriber_library
+[45.316s] [ 79%] [32mBuilding CXX object CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o[0m
+[48.038s] [ 83%] [32m[1mLinking CXX executable time_triggered_wait_set_subscriber[0m
+[48.173s] [ 83%] Built target time_triggered_wait_set_subscriber
+[48.197s] [ 87%] [32mBuilding CXX object CMakeFiles/static_wait_set_subscriber.dir/rclcpp_components/node_main_static_wait_set_subscriber.cpp.o[0m
+[50.857s] [ 91%] [32m[1mLinking CXX executable static_wait_set_subscriber[0m
+[50.999s] [ 91%] Built target static_wait_set_subscriber
+[51.026s] [ 95%] [32mBuilding CXX object CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o[0m
+[53.697s] [100%] [32m[1mLinking CXX executable wait_set_subscriber[0m
+[53.849s] [100%] Built target wait_set_subscriber
+[53.905s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j8 -l8
+[53.909s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber
+[53.919s] -- Install configuration: ""
+[53.919s] -- Execute custom install script
+[53.921s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[53.933s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[53.946s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[53.958s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[53.971s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[53.984s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[53.996s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[54.007s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[54.019s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[54.031s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[54.042s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[54.056s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[54.069s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[54.085s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[54.097s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[54.109s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[54.121s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[54.133s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[54.145s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[54.158s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[54.170s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[54.184s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[54.198s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[54.211s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[54.223s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[54.234s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[54.246s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[54.261s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_subscriber

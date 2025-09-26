@@ -1,0 +1,51 @@
+[0.283s] Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/talker -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/talker
+[0.562s] -- The C compiler identification is GNU 13.3.0
+[1.166s] -- The CXX compiler identification is GNU 13.3.0
+[1.603s] -- Detecting C compiler ABI info
+[1.884s] -- Detecting C compiler ABI info - done
+[1.899s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.900s] -- Detecting C compile features
+[1.900s] -- Detecting C compile features - done
+[1.994s] -- Detecting CXX compiler ABI info
+[2.287s] -- Detecting CXX compiler ABI info - done
+[2.301s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.302s] -- Detecting CXX compile features
+[2.303s] -- Detecting CXX compile features - done
+[2.316s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[2.561s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.704s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[2.845s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.846s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ilya/ros2_ws/src/talker/include>
+[2.846s] -- Configured cppcheck exclude dirs and/or files: 
+[2.847s] -- Added test 'lint_cmake' to check CMake code style
+[2.851s] -- Added test 'uncrustify' to check C / C++ code style
+[2.851s] -- Configured uncrustify additional arguments: 
+[2.852s] -- Added test 'xmllint' to check XML markup files
+[2.856s] -- Configuring done (2.6s)
+[2.868s] -- Generating done (0.0s)
+[2.871s] -- Build files have been written to: /home/ilya/ros2_ws/build/talker
+[2.881s] Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/talker -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/talker
+[2.882s] Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/talker -- -j8 -l8
+[2.970s] [ 50%] [32mBuilding CXX object CMakeFiles/talker_node.dir/src/talker_node.cpp.o[0m
+[3.035s] [100%] [32m[1mLinking CXX executable talker_node[0m
+[3.159s] [100%] Built target talker_node
+[3.179s] Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/talker -- -j8 -l8
+[3.181s] Invoking command in '/home/ilya/ros2_ws/build/talker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/talker
+[3.194s] -- Install configuration: ""
+[3.196s] -- Installing: /home/ilya/ros2_ws/install/talker/lib/talker/talker_node
+[3.199s] -- Installing: /home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/package_run_dependencies/talker
+[3.200s] -- Installing: /home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/parent_prefix_path/talker
+[3.201s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/environment/ament_prefix_path.sh
+[3.201s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/environment/ament_prefix_path.dsv
+[3.202s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/environment/path.sh
+[3.202s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/environment/path.dsv
+[3.202s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/local_setup.bash
+[3.202s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/local_setup.sh
+[3.203s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/local_setup.zsh
+[3.203s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/local_setup.dsv
+[3.203s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/package.dsv
+[3.204s] -- Installing: /home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/packages/talker
+[3.205s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/cmake/talkerConfig.cmake
+[3.205s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/cmake/talkerConfig-version.cmake
+[3.205s] -- Installing: /home/ilya/ros2_ws/install/talker/share/talker/package.xml
+[3.209s] Invoked command in '/home/ilya/ros2_ws/build/talker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/talker

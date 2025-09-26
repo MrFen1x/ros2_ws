@@ -1,0 +1,33 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/ilya/ros2_ws/build/launch_testing_examples/.pytest_cache
+rootdir: /home/ilya/ros2_ws/src/examples/launch_testing/launch_testing_examples
+plugins: launch-testing-ros-0.28.2, ament-copyright-0.19.2, ament-pep257-0.19.2, launch-testing-3.8.2, ament-xmllint-0.19.2, ament-lint-0.19.2, ament-flake8-0.19.2, cov-4.1.0, colcon-core-0.20.0, typeguard-4.1.5
+[1mcollecting ... [0m[1m
+collected 10 items                                                             [0m
+
+launch_testing_examples/check_msgs_launch_test.py [32m.[0m[32m                      [ 10%][0m
+launch_testing_examples/check_multiple_nodes_launch_test.py [32m.[0m[32m            [ 20%][0m
+launch_testing_examples/check_node_launch_test.py [32m.[0m[32m                      [ 30%][0m
+launch_testing_examples/hello_world_launch_test.py [32m.[0m[32m                     [ 40%][0m
+launch_testing_examples/record_rosbag_launch_test.py [32m.[0m[32m                   [ 50%][0m
+launch_testing_examples/set_param_launch_test.py [32m.[0m[32m                       [ 60%][0m
+test/test_copyright.py [32m.[0m[32m                                                 [ 70%][0m
+test/test_flake8.py [32m.[0m[33m                                                    [ 80%][0m
+test/test_pep257.py [32m.[0m[33m                                                    [ 90%][0m
+test/test_xmllint.py [32m.[0m[33m                                                   [100%][0m
+- generated xml file: /home/ilya/ros2_ws/build/launch_testing_examples/pytest.xml -
+[33m======================= [32m10 passed[0m, [33m[1m8 warnings[0m[33m in 42.79s[0m[33m ========================[0m
+
+[33m=============================== warnings summary ===============================[0m
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: This process (pid=15422) is multi-threaded, use of fork() may lead to deadlocks in the child.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html

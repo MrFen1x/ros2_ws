@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor" FILES "/home/ilya/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor/package.xml" "DESTINATION" "share/examples_rclcpp_multithreaded_executor")

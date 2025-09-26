@@ -1,0 +1,16 @@
+/home/ilya/ros2_ws/install/talker/lib/talker/talker_node
+/home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/package_run_dependencies/talker
+/home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/parent_prefix_path/talker
+/home/ilya/ros2_ws/install/talker/share/talker/environment/ament_prefix_path.sh
+/home/ilya/ros2_ws/install/talker/share/talker/environment/ament_prefix_path.dsv
+/home/ilya/ros2_ws/install/talker/share/talker/environment/path.sh
+/home/ilya/ros2_ws/install/talker/share/talker/environment/path.dsv
+/home/ilya/ros2_ws/install/talker/share/talker/local_setup.bash
+/home/ilya/ros2_ws/install/talker/share/talker/local_setup.sh
+/home/ilya/ros2_ws/install/talker/share/talker/local_setup.zsh
+/home/ilya/ros2_ws/install/talker/share/talker/local_setup.dsv
+/home/ilya/ros2_ws/install/talker/share/talker/package.dsv
+/home/ilya/ros2_ws/install/talker/share/ament_index/resource_index/packages/talker
+/home/ilya/ros2_ws/install/talker/share/talker/cmake/talkerConfig.cmake
+/home/ilya/ros2_ws/install/talker/share/talker/cmake/talkerConfig-version.cmake
+/home/ilya/ros2_ws/install/talker/share/talker/package.xml

@@ -1,0 +1,60 @@
+[0.060s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher
+[1.649s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.650s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.650s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.650s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.650s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.650s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.650s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.650s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.650s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.650s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.651s] -- Found std_msgs: 5.5.0 (/opt/ros/kilted/share/std_msgs/cmake)
+[1.651s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.651s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.651s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.652s] -- Configured cppcheck include dirs: 
+[1.652s] -- Configured cppcheck exclude dirs and/or files: 
+[1.652s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.652s] -- Configured cpplint exclude dirs and/or files: 
+[1.653s] -- Added test 'lint_cmake' to check CMake code style
+[1.653s] -- Added test 'uncrustify' to check C / C++ code style
+[1.653s] -- Configured uncrustify additional arguments: 
+[1.653s] -- Added test 'xmllint' to check XML markup files
+[1.653s] -- Configuring done (1.5s)
+[1.659s] -- Generating done (0.1s)
+[1.673s] -- Build files have been written to: /home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher
+[1.693s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher
+[1.697s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher -- -j8 -l8
+[1.907s] [ 16%] Built target publisher_member_function_with_type_adapter
+[1.908s] [ 33%] Built target publisher_member_function
+[1.908s] [ 50%] Built target publisher_member_function_with_unique_network_flow_endpoints
+[1.913s] [ 75%] Built target publisher_lambda
+[1.914s] [ 83%] Built target publisher_not_composable
+[1.914s] [100%] Built target publisher_wait_for_all_acked
+[1.940s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher -- -j8 -l8
+[1.942s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher
+[1.957s] -- Install configuration: ""
+[1.958s] -- Execute custom install script
+[1.958s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_lambda
+[1.959s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function
+[1.960s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_type_adapter
+[1.960s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_unique_network_flow_endpoints
+[1.960s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_wait_for_all_acked
+[1.960s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_not_composable
+[1.960s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_publisher
+[1.961s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_publisher
+[1.962s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.sh
+[1.962s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.dsv
+[1.963s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.sh
+[1.964s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.dsv
+[1.964s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.bash
+[1.964s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.sh
+[1.965s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.zsh
+[1.965s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.dsv
+[1.965s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.dsv
+[1.989s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/packages/examples_rclcpp_minimal_publisher
+[1.989s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig.cmake
+[1.989s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig-version.cmake
+[1.990s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.xml
+[2.063s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher

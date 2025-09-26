@@ -1,0 +1,44 @@
+[1.445s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[1.897s] running develop
+[2.226s] Removing /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples-rclpy-minimal-subscriber.egg-link (link to .)
+[2.273s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[2.276s] Invoking command in '/home/ilya/ros2_ws/src/examples/rclpy/topics/minimal_subscriber': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed install_data --force
+[2.683s] running egg_info
+[2.703s] writing ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/PKG-INFO
+[2.704s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/dependency_links.txt
+[2.704s] writing entry points to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/entry_points.txt
+[2.705s] writing requirements to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/requires.txt
+[2.705s] writing top-level names to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/top_level.txt
+[2.750s] reading manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[2.752s] writing manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[2.752s] running build
+[2.752s] running build_py
+[2.753s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[2.753s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib
+[2.754s] creating /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[2.755s] copying examples_rclpy_minimal_subscriber/__init__.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[2.755s] copying examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[2.755s] copying examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[2.756s] copying examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[2.757s] running install
+[2.763s] running install_lib
+[2.784s] creating /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber
+[2.785s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/__init__.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber
+[2.785s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber
+[2.785s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber
+[2.785s] copying /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber
+[2.786s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber/__init__.py to __init__.cpython-312.pyc
+[2.787s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber/subscriber_old_school.py to subscriber_old_school.cpython-312.pyc
+[2.788s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+[2.788s] byte-compiling /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber/subscriber_lambda.py to subscriber_lambda.cpython-312.pyc
+[2.789s] running install_data
+[2.789s] copying resource/examples_rclpy_minimal_subscriber -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[2.789s] copying package.xml -> /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber
+[2.790s] running install_egg_info
+[2.812s] Copying ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info to /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages/examples_rclpy_minimal_subscriber-0.20.5-py3.12.egg-info
+[2.816s] running install_scripts
+[3.018s] Installing subscriber_lambda script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.018s] Installing subscriber_member_function script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.018s] Installing subscriber_old_school script to /home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.019s] writing list of installed files to '/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log'
+[3.065s] Invoked command in '/home/ilya/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/ilya/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed install_data --force

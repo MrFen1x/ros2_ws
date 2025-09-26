@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/topics/minimal_publisher" FILES "/home/ilya/ros2_ws/build/examples_rclcpp_minimal_publisher/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/examples_rclcpp_minimal_publisher")

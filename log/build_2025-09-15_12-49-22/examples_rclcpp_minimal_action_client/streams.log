@@ -1,0 +1,57 @@
+[0.055s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client
+[0.147s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.667s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.680s] -- Found example_interfaces: 0.13.0 (/opt/ros/kilted/share/example_interfaces/cmake)
+[0.823s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.841s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.872s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.901s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.070s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.139s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.142s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.224s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.383s] -- Found rclcpp_action: 29.5.2 (/opt/ros/kilted/share/rclcpp_action/cmake)
+[1.406s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.601s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.605s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.608s] -- Configured cppcheck include dirs: 
+[1.608s] -- Configured cppcheck exclude dirs and/or files: 
+[1.609s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.609s] -- Configured cpplint exclude dirs and/or files: 
+[1.609s] -- Added test 'lint_cmake' to check CMake code style
+[1.609s] -- Added test 'uncrustify' to check C / C++ code style
+[1.610s] -- Configured uncrustify additional arguments: 
+[1.610s] -- Added test 'xmllint' to check XML markup files
+[1.614s] -- Configuring done (1.5s)
+[1.681s] -- Generating done (0.1s)
+[1.695s] -- Build files have been written to: /home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client
+[1.715s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client
+[1.715s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client -- -j8 -l8
+[1.896s] [ 25%] Built target action_client_not_composable_with_feedback
+[1.899s] [ 50%] Built target action_client_not_composable_with_cancel
+[1.904s] [ 75%] Built target action_client_member_functions
+[1.908s] [100%] Built target action_client_not_composable
+[1.966s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client -- -j8 -l8
+[1.967s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client
+[2.004s] -- Install configuration: ""
+[2.004s] -- Execute custom install script
+[2.005s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_member_functions
+[2.005s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable
+[2.006s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_cancel
+[2.006s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_feedback
+[2.006s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_action_client
+[2.007s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_action_client
+[2.007s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.sh
+[2.007s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.dsv
+[2.007s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.sh
+[2.007s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.dsv
+[2.008s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.bash
+[2.008s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.sh
+[2.009s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.zsh
+[2.009s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.dsv
+[2.009s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.dsv
+[2.015s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/packages/examples_rclcpp_minimal_action_client
+[2.016s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig.cmake
+[2.016s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig-version.cmake
+[2.017s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.xml
+[2.102s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_minimal_action_client

@@ -1,0 +1,18 @@
+[0.708s] Invoking command in '/home/ilya/ros2_ws/src/examples/rclpy/services/minimal_service': AMENT_PREFIX_PATH=/home/ilya/ros2_ws/install/examples_rclpy_minimal_service:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service/pytest.xml --junit-prefix=examples_rclpy_minimal_service -o cache_dir=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service:/home/ilya/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.980s] [1m============================= test session starts ==============================[0m
+[0.981s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.983s] cachedir: /home/ilya/ros2_ws/build/examples_rclpy_minimal_service/.pytest_cache
+[0.983s] rootdir: /home/ilya/ros2_ws/src/examples/rclpy
+[0.983s] configfile: pytest.ini
+[0.983s] plugins: launch-testing-ros-0.28.2, ament-copyright-0.19.2, ament-pep257-0.19.2, launch-testing-3.8.2, ament-xmllint-0.19.2, ament-lint-0.19.2, ament-flake8-0.19.2, cov-4.1.0, colcon-core-0.20.0, typeguard-4.1.5
+[1.048s] [1mcollecting ... [0m[1m
+[1.048s] collected 4 items                                                              [0m
+[1.048s] 
+[1.082s] test/test_copyright.py [32m.[0m[32m                                                 [ 25%][0m
+[1.179s] test/test_flake8.py [32m.[0m[32m                                                    [ 50%][0m
+[1.189s] test/test_pep257.py [32m.[0m[32m                                                    [ 75%][0m
+[1.497s] test/test_xmllint.py [32m.[0m[32m                                                   [100%][0m
+[1.497s] 
+[1.498s] - generated xml file: /home/ilya/ros2_ws/build/examples_rclpy_minimal_service/pytest.xml -
+[1.498s] [32m============================== [32m[1m4 passed[0m[32m in 0.52s[0m[32m ===============================[0m
+[1.567s] Invoked command in '/home/ilya/ros2_ws/src/examples/rclpy/services/minimal_service' returned '0': AMENT_PREFIX_PATH=/home/ilya/ros2_ws/install/examples_rclpy_minimal_service:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service/pytest.xml --junit-prefix=examples_rclpy_minimal_service -o cache_dir=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_minimal_service:/home/ilya/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

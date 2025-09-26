@@ -1,0 +1,8 @@
+source;share/talker/hook/cmake_prefix_path.ps1
+source;share/talker/hook/cmake_prefix_path.dsv
+source;share/talker/hook/cmake_prefix_path.sh
+source;share/talker/local_setup.bash
+source;share/talker/local_setup.dsv
+source;share/talker/local_setup.ps1
+source;share/talker/local_setup.sh
+source;share/talker/local_setup.zsh

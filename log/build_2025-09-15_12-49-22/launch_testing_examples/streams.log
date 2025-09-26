@@ -1,0 +1,49 @@
+[1.246s] Invoking command in '/home/ilya/ros2_ws/build/launch_testing_examples': PYTHONPATH=/home/ilya/ros2_ws/build/launch_testing_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/launch_testing_examples/build
+[1.728s] running develop
+[2.012s] Removing /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch-testing-examples.egg-link (link to .)
+[2.049s] Invoked command in '/home/ilya/ros2_ws/build/launch_testing_examples' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/launch_testing_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ilya/ros2_ws/build/launch_testing_examples/build
+[2.050s] Invoking command in '/home/ilya/ros2_ws/src/examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/ilya/ros2_ws/build/launch_testing_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/ilya/ros2_ws/build/launch_testing_examples/build install --record /home/ilya/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed install_data --force
+[2.419s] running egg_info
+[2.451s] writing ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/PKG-INFO
+[2.452s] writing dependency_links to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/dependency_links.txt
+[2.454s] writing requirements to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/requires.txt
+[2.455s] writing top-level names to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/top_level.txt
+[2.507s] reading manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[2.509s] writing manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[2.509s] running build
+[2.509s] running build_py
+[2.510s] creating /home/ilya/ros2_ws/build/launch_testing_examples/build
+[2.510s] creating /home/ilya/ros2_ws/build/launch_testing_examples/build/lib
+[2.511s] creating /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.511s] copying launch_testing_examples/record_rosbag_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.512s] copying launch_testing_examples/set_param_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.513s] copying launch_testing_examples/check_msgs_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.513s] copying launch_testing_examples/__init__.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.513s] copying launch_testing_examples/hello_world_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.514s] copying launch_testing_examples/check_node_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.514s] copying launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[2.515s] running install
+[2.522s] running install_lib
+[2.543s] creating /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.543s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/record_rosbag_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/set_param_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_msgs_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/__init__.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/hello_world_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_node_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.544s] copying /home/ilya/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples
+[2.545s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/record_rosbag_launch_test.py to record_rosbag_launch_test.cpython-312.pyc
+[2.547s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/set_param_launch_test.py to set_param_launch_test.cpython-312.pyc
+[2.548s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/check_msgs_launch_test.py to check_msgs_launch_test.cpython-312.pyc
+[2.548s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/__init__.py to __init__.cpython-312.pyc
+[2.549s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/hello_world_launch_test.py to hello_world_launch_test.cpython-312.pyc
+[2.549s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/check_node_launch_test.py to check_node_launch_test.cpython-312.pyc
+[2.550s] byte-compiling /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples/check_multiple_nodes_launch_test.py to check_multiple_nodes_launch_test.cpython-312.pyc
+[2.551s] running install_data
+[2.551s] copying resource/launch_testing_examples -> /home/ilya/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index/packages
+[2.552s] copying package.xml -> /home/ilya/ros2_ws/install/launch_testing_examples/share/launch_testing_examples
+[2.552s] running install_egg_info
+[2.575s] Copying ../../../../build/launch_testing_examples/launch_testing_examples.egg-info to /home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages/launch_testing_examples-0.20.5-py3.12.egg-info
+[2.577s] running install_scripts
+[2.727s] writing list of installed files to '/home/ilya/ros2_ws/build/launch_testing_examples/install.log'
+[2.767s] Invoked command in '/home/ilya/ros2_ws/src/examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/launch_testing_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/ilya/ros2_ws/build/launch_testing_examples/build install --record /home/ilya/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed install_data --force

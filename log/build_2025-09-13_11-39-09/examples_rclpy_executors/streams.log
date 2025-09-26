@@ -1,0 +1,29 @@
+[2.517s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclpy_executors': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_executors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_executors/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_executors/build --no-deps symlink_data
+[4.173s] running develop
+[4.173s] running egg_info
+[4.188s] creating examples_rclpy_executors.egg-info
+[4.188s] writing examples_rclpy_executors.egg-info/PKG-INFO
+[4.188s] writing dependency_links to examples_rclpy_executors.egg-info/dependency_links.txt
+[4.188s] writing entry points to examples_rclpy_executors.egg-info/entry_points.txt
+[4.188s] writing requirements to examples_rclpy_executors.egg-info/requires.txt
+[4.188s] writing top-level names to examples_rclpy_executors.egg-info/top_level.txt
+[4.188s] writing manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.188s] reading manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.188s] writing manifest file 'examples_rclpy_executors.egg-info/SOURCES.txt'
+[4.188s] running build_ext
+[4.188s] Creating /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/python3.12/site-packages/examples-rclpy-executors.egg-link (link to .)
+[4.189s] Installing callback_group script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.189s] Installing composed script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.189s] Installing custom_callback_group script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.189s] Installing custom_executor script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.190s] Installing listener script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.191s] Installing talker script to /home/ilya/ros2_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[4.191s] 
+[4.191s] Installed /home/ilya/ros2_ws/build/examples_rclpy_executors
+[4.191s] running symlink_data
+[4.191s] creating /home/ilya/ros2_ws/install/examples_rclpy_executors/share/ament_index
+[4.191s] creating /home/ilya/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index
+[4.191s] creating /home/ilya/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[4.191s] symbolically linking /home/ilya/ros2_ws/build/examples_rclpy_executors/resource/examples_rclpy_executors -> /home/ilya/ros2_ws/install/examples_rclpy_executors/share/ament_index/resource_index/packages
+[4.204s] symbolically linking /home/ilya/ros2_ws/build/examples_rclpy_executors/package.xml -> /home/ilya/ros2_ws/install/examples_rclpy_executors/share/examples_rclpy_executors
+[4.264s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclpy_executors' returned '0': PYTHONPATH=/home/ilya/ros2_ws/build/examples_rclpy_executors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilya/ros2_ws/install/examples_rclpy_executors/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ilya/ros2_ws/build/examples_rclpy_executors/build --no-deps symlink_data

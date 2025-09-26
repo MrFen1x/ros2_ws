@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/services/minimal_service" FILES "/home/ilya/ros2_ws/build/examples_rclcpp_minimal_service/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/examples_rclcpp_minimal_service")

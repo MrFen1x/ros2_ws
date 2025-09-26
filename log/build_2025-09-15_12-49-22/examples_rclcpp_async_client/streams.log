@@ -1,0 +1,50 @@
+[0.065s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_async_client
+[0.166s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.669s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.697s] -- Found example_interfaces: 0.13.0 (/opt/ros/kilted/share/example_interfaces/cmake)
+[0.842s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.868s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.891s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.920s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.084s] -- Found rclcpp: 29.5.2 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.147s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.149s] -- Found rmw_fastrtps_cpp: 9.3.2 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.230s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.401s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.603s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.604s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.604s] -- Configured cppcheck include dirs: 
+[1.605s] -- Configured cppcheck exclude dirs and/or files: 
+[1.610s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.610s] -- Configured cpplint exclude dirs and/or files: 
+[1.611s] -- Added test 'lint_cmake' to check CMake code style
+[1.614s] -- Added test 'uncrustify' to check C / C++ code style
+[1.614s] -- Configured uncrustify additional arguments: 
+[1.615s] -- Added test 'xmllint' to check XML markup files
+[1.619s] -- Configuring done (1.5s)
+[1.665s] -- Generating done (0.0s)
+[1.674s] -- Build files have been written to: /home/ilya/ros2_ws/build/examples_rclcpp_async_client
+[1.696s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/ilya/ros2_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/ilya/ros2_ws/install/examples_rclcpp_async_client
+[1.698s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_async_client -- -j8 -l8
+[1.916s] [100%] Built target client_main
+[1.992s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/ilya/ros2_ws/build/examples_rclcpp_async_client -- -j8 -l8
+[1.995s] Invoking command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_async_client
+[2.067s] -- Install configuration: ""
+[2.067s] -- Execute custom install script
+[2.068s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/lib/examples_rclcpp_async_client/client_main
+[2.068s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_async_client
+[2.068s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_async_client
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/ament_prefix_path.sh
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/ament_prefix_path.dsv
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/path.sh
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/path.dsv
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.bash
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.sh
+[2.069s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.zsh
+[2.070s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.dsv
+[2.070s] -- Symlinking: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/package.dsv
+[2.070s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/packages/examples_rclcpp_async_client
+[2.070s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/cmake/examples_rclcpp_async_clientConfig.cmake
+[2.070s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/cmake/examples_rclcpp_async_clientConfig-version.cmake
+[2.070s] -- Up-to-date symlink: /home/ilya/ros2_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/package.xml
+[2.138s] Invoked command in '/home/ilya/ros2_ws/build/examples_rclcpp_async_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/ilya/ros2_ws/build/examples_rclcpp_async_client
