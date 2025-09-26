@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/actions/minimal_action_server" FILES "/home/ilya/ros2_ws/src/examples/rclcpp/actions/minimal_action_server/package.xml" "DESTINATION" "share/examples_rclcpp_minimal_action_server")

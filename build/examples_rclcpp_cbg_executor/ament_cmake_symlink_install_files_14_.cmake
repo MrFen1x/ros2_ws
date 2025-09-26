@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/executors/cbg_executor" FILES "/home/ilya/ros2_ws/src/examples/rclcpp/executors/cbg_executor/package.xml" "DESTINATION" "share/examples_rclcpp_cbg_executor")

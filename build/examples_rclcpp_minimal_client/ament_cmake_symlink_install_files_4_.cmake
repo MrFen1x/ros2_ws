@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/ilya/ros2_ws/src/examples/rclcpp/services/minimal_client" FILES "/opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/examples_rclcpp_minimal_client/environment")
