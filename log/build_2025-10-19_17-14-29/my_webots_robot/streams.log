@@ -1,0 +1,127 @@
+[0.017s] Invoking command in '/home/ubuntu/ros2_ws/build/my_webots_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/my_webots_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/my_webots_robot
+[0.118s] -- The C compiler identification is GNU 13.3.0
+[0.215s] -- The CXX compiler identification is GNU 13.3.0
+[0.246s] -- Detecting C compiler ABI info
+[0.400s] -- Detecting C compiler ABI info - done
+[0.415s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.415s] -- Detecting C compile features
+[0.415s] -- Detecting C compile features - done
+[0.432s] -- Detecting CXX compiler ABI info
+[0.599s] -- Detecting CXX compiler ABI info - done
+[0.613s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.614s] -- Detecting CXX compile features
+[0.615s] -- Detecting CXX compile features - done
+[0.625s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.866s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.999s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.038s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.048s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.060s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.073s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.135s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.137s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.208s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.229s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.248s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.302s] -- Found webots_ros2_driver: 2025.0.0 (/opt/ros/jazzy/share/webots_ros2_driver/cmake)
+[1.372s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.373s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.373s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.528s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.528s]   Package 'webots_ros2_driver' exports library 'controller/libController.so'
+[1.528s]   which couldn't be found
+[1.528s] Call Stack (most recent call first):
+[1.529s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.529s]   CMakeLists.txt:6 (find_package)
+[1.529s] 
+[1.529s] [0m
+[1.529s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.529s]   Package 'webots_ros2_driver' exports library
+[1.529s]   'controller/libCppController.so' which couldn't be found
+[1.529s] Call Stack (most recent call first):
+[1.529s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.529s]   CMakeLists.txt:6 (find_package)
+[1.529s] 
+[1.529s] [0m
+[1.530s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.530s]   Package 'webots_ros2_driver' exports library 'controller/libdriver.so'
+[1.530s]   which couldn't be found
+[1.530s] Call Stack (most recent call first):
+[1.530s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.530s]   CMakeLists.txt:6 (find_package)
+[1.530s] 
+[1.530s] [0m
+[1.531s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.531s]   Package 'webots_ros2_driver' exports library 'controller/libCppDriver.so'
+[1.531s]   which couldn't be found
+[1.531s] Call Stack (most recent call first):
+[1.531s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.531s]   CMakeLists.txt:6 (find_package)
+[1.531s] 
+[1.531s] [0m
+[1.532s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.532s]   Package 'webots_ros2_driver' exports library 'controller/libcar.so' which
+[1.532s]   couldn't be found
+[1.532s] Call Stack (most recent call first):
+[1.532s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.532s]   CMakeLists.txt:6 (find_package)
+[1.532s] 
+[1.532s] [0m
+[1.532s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.533s]   Package 'webots_ros2_driver' exports library 'controller/libCppCar.so'
+[1.533s]   which couldn't be found
+[1.533s] Call Stack (most recent call first):
+[1.533s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.533s]   CMakeLists.txt:6 (find_package)
+[1.533s] 
+[1.533s] [0m
+[1.533s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.533s]   Package 'webots_ros2_driver' exports library
+[1.533s]   'controller/libgeneric_robot_window.so' which couldn't be found
+[1.533s] Call Stack (most recent call first):
+[1.533s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.533s]   CMakeLists.txt:6 (find_package)
+[1.533s] 
+[1.534s] [0m
+[1.600s] -- Configuring done (1.6s)
+[1.630s] -- Generating done (0.0s)
+[1.631s] [33mCMake Warning:
+[1.631s]   Manually-specified variables were not used by the project:
+[1.631s] 
+[1.631s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.631s]     CATKIN_SYMLINK_INSTALL
+[1.631s] 
+[1.632s] [0m
+[1.633s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/my_webots_robot
+[1.643s] Invoked command in '/home/ubuntu/ros2_ws/build/my_webots_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/my_webots_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/my_webots_robot
+[1.644s] Invoking command in '/home/ubuntu/ros2_ws/build/my_webots_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/my_webots_robot -- -j16 -l16
+[1.689s] [ 42%] [32mBuilding C object CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c.o[0m
+[1.689s] [ 42%] [32mBuilding C object CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c.o[0m
+[1.689s] [ 42%] [32mBuilding C object CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c.o[0m
+[1.689s] [ 57%] [32mBuilding C object CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c.o[0m
+[1.694s] In file included from [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c:21[m[K:
+[1.695s] [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/../libraries/youbot_control/include/base.h:24:10:[m[K [01;31m[Kfatal error: [m[Kwebots/types.h: Нет такого файла или каталога
+[1.695s]    24 | #include [01;31m[K<webots/types.h>[m[K
+[1.695s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.695s] compilation terminated.
+[1.695s] [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c:23:10:[m[K [01;31m[Kfatal error: [m[Kwebots/motor.h: Нет такого файла или каталога
+[1.695s]    23 | #include [01;31m[K<webots/motor.h>[m[K
+[1.695s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.695s] compilation terminated.
+[1.695s] [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c:23:10:[m[K [01;31m[Kfatal error: [m[Kwebots/motor.h: Нет такого файла или каталога
+[1.695s]    23 | #include [01;31m[K<webots/motor.h>[m[K
+[1.695s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.695s] In file included from [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c:17[m[K:
+[1.695s] [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/../libraries/youbot_control/include/tiny_math.h:24:10:[m[K [01;31m[Kfatal error: [m[Kwebots/types.h: Нет такого файла или каталога
+[1.696s]    24 | #include [01;31m[K<webots/types.h>[m[K
+[1.696s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.696s] compilation terminated.
+[1.696s] compilation terminated.
+[1.696s] gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:104: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c.o] Ошибка 1
+[1.696s] gmake[2]: *** Ожидание завершения заданий…
+[1.696s] gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:118: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c.o] Ошибка 1
+[1.696s] gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:76: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c.o] Ошибка 1
+[1.696s] gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:90: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c.o] Ошибка 1
+[1.696s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/youbot_control.dir/all] Ошибка 2
+[1.696s] gmake: *** [Makefile:146: all] Ошибка 2
+[1.698s] Invoked command in '/home/ubuntu/ros2_ws/build/my_webots_robot' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/my_webots_robot -- -j16 -l16

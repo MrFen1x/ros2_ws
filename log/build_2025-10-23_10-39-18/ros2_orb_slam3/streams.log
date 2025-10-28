@@ -1,0 +1,49 @@
+[0.326s] Invoking command in '/home/ubuntu/ros2_ws/build/ros2_orb_slam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/ros2_orb_slam3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/ros2_orb_slam3
+[0.518s] -- The C compiler identification is GNU 13.3.0
+[0.653s] -- The CXX compiler identification is GNU 13.3.0
+[0.687s] -- Detecting C compiler ABI info
+[0.855s] -- Detecting C compiler ABI info - done
+[0.869s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.870s] -- Detecting C compile features
+[0.871s] -- Detecting C compile features - done
+[0.887s] -- Detecting CXX compiler ABI info
+[1.093s] -- Detecting CXX compiler ABI info - done
+[1.113s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.114s] -- Detecting CXX compile features
+[1.115s] -- Detecting CXX compile features - done
+[1.405s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.418s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.531s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.602s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.662s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.688s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.711s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.734s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.823s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.828s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.942s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.971s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.993s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.072s] -- Found rclpy: 7.1.5 (/opt/ros/jazzy/share/rclpy/cmake)
+[2.076s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.090s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.127s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[2.143s] -- Found OpenCV: /usr (found suitable version "4.6.0", minimum required is "4.2") 
+[2.167s] [31mCMake Error at CMakeLists.txt:26 (find_package):
+[2.167s]   By not providing "FindPangolin.cmake" in CMAKE_MODULE_PATH this project has
+[2.167s]   asked CMake to find a package configuration file provided by "Pangolin",
+[2.167s]   but CMake did not find one.
+[2.167s] 
+[2.167s]   Could not find a package configuration file provided by "Pangolin" with any
+[2.167s]   of the following names:
+[2.167s] 
+[2.167s]     PangolinConfig.cmake
+[2.167s]     pangolin-config.cmake
+[2.167s] 
+[2.167s]   Add the installation prefix of "Pangolin" to CMAKE_PREFIX_PATH or set
+[2.167s]   "Pangolin_DIR" to a directory containing one of the above files.  If
+[2.167s]   "Pangolin" provides a separate development package or SDK, be sure it has
+[2.167s]   been installed.
+[2.168s] 
+[2.168s] [0m
+[2.168s] -- Configuring incomplete, errors occurred!

@@ -1,0 +1,91 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found webots_ros2_driver: 2025.0.0 (/opt/ros/jazzy/share/webots_ros2_driver/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libController.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libCppController.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libdriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppDriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libcar.so' which
+  couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppCar.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libgeneric_robot_window.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+-- Found pluginlib: 5.4.2 (/opt/ros/jazzy/share/pluginlib/cmake)
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/ros2_ws/build/my_webots_robot
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/webots/cpp/webots/Device.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/webots/cpp/webots/DistanceSensor.hpp:18[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/src/my_robot_node.cpp:4[m[K:
+[01m[K/opt/ros/jazzy/include/webots/cpp/webots/../../c/webots/types.h:25:2:[m[K [01;35m[Kwarning: [m[K#warning "mixing the C and C++ APIs in the same controller is not supported." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   25 | #[01;35m[Kwarning[m[K "mixing the C and C++ APIs in the same controller is not supported."
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/include/my_webots_robot/base.h:24[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/src/my_robot_node.cpp:7[m[K:
+[01m[K/opt/ros/jazzy/include/webots/c/webots/types.h:25:2:[m[K [01;35m[Kwarning: [m[K#warning "mixing the C and C++ APIs in the same controller is not supported." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   25 | #[01;35m[Kwarning[m[K "mixing the C and C++ APIs in the same controller is not supported."
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/src/my_robot_node.cpp:57:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: Нет такого файла или каталога
+   57 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_node.dir/build.make:76: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

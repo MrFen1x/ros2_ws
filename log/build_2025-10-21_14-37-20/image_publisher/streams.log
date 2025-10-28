@@ -1,0 +1,34 @@
+[0.345s] Invoking command in '/home/ubuntu/ros2_ws/build/image_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/image_pipeline/image_publisher -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/image_publisher
+[0.439s] -- The C compiler identification is GNU 13.3.0
+[0.532s] -- The CXX compiler identification is GNU 13.3.0
+[0.560s] -- Detecting C compiler ABI info
+[0.719s] -- Detecting C compiler ABI info - done
+[0.731s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.731s] -- Detecting C compile features
+[0.732s] -- Detecting C compile features - done
+[0.748s] -- Detecting CXX compiler ABI info
+[0.928s] -- Detecting CXX compiler ABI info - done
+[0.942s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.942s] -- Detecting CXX compile features
+[0.943s] -- Detecting CXX compile features - done
+[0.951s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[1.231s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.498s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[1.498s]   By not providing "Findcamera_info_manager.cmake" in CMAKE_MODULE_PATH this
+[1.498s]   project has asked CMake to find a package configuration file provided by
+[1.498s]   "camera_info_manager", but CMake did not find one.
+[1.498s] 
+[1.498s]   Could not find a package configuration file provided by
+[1.499s]   "camera_info_manager" with any of the following names:
+[1.499s] 
+[1.499s]     camera_info_managerConfig.cmake
+[1.499s]     camera_info_manager-config.cmake
+[1.499s] 
+[1.499s]   Add the installation prefix of "camera_info_manager" to CMAKE_PREFIX_PATH
+[1.499s]   or set "camera_info_manager_DIR" to a directory containing one of the above
+[1.499s]   files.  If "camera_info_manager" provides a separate development package or
+[1.499s]   SDK, be sure it has been installed.
+[1.499s] 
+[1.499s] [0m
+[1.499s] -- Configuring incomplete, errors occurred!
+[1.509s] Invoked command in '/home/ubuntu/ros2_ws/build/image_publisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/image_pipeline/image_publisher -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/image_publisher

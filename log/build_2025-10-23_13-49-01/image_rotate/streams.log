@@ -1,0 +1,50 @@
+[0.404s] Invoking command in '/home/ubuntu/ros2_ws/build/image_rotate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/image_rotate -- -j16 -l16
+[0.746s] [ 25%] Built target image_flip_node
+[0.746s] [ 37%] [32mBuilding CXX object CMakeFiles/image_rotate.dir/src/image_rotate_node.cpp.o[0m
+[3.473s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:[m[K In lambda function:
+[3.473s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:316:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::TransportHints::TransportHints(image_rotate::ImageRotateNode&, const char [4])[m[K’
+[3.474s]   316 |           "raw"[01;31m[K)[m[K;
+[3.474s]       |                [01;31m[K^[m[K
+[3.474s] In file included from [01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:43[m[K,
+[3.474s]                  from [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/include/image_rotate/image_rotate_node.hpp:44[m[K,
+[3.474s]                  from [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:42[m[K:
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:61:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::TransportHints::[01;32m[KTransportHints[m[K(const rclcpp::Node*, const std::string&, const std::string&)[m[K’
+[3.474s]    61 |   [01;36m[KTransportHints[m[K(
+[3.474s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:62:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kimage_rotate::ImageRotateNode[m[K’ to ‘[01m[Kconst rclcpp::Node*[m[K’
+[3.474s]    62 |     [01;36m[Kconst rclcpp::Node * node[m[K,
+[3.474s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:45:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::TransportHints::[01;32m[KTransportHints[m[K(const image_transport::TransportHints&)[m[K’
+[3.474s]    45 | class [01;36m[KTransportHints[m[K
+[3.474s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:45:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:45:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::TransportHints::[01;32m[KTransportHints[m[K(image_transport::TransportHints&&)[m[K’
+[3.474s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp:45:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.477s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:322:13:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kimage_rotate::ImageRotateNode[m[K’ to ‘[01m[Krclcpp::Node*[m[K’
+[3.477s]   322 |             [01;31m[K*this[m[K,
+[3.477s]       |             [01;31m[K^~~~~[m[K
+[3.477s]       |             [01;31m[K|[m[K
+[3.477s]       |             [01;31m[Kimage_rotate::ImageRotateNode[m[K
+[3.477s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:86:18:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kimage_transport::CameraSubscriber image_transport::[01;32m[Kcreate_camera_subscription[m[K(rclcpp::Node*, const std::string&, const CameraSubscriber::Callback&, const std::string&, rmw_qos_profile_t)[m[K’
+[3.477s]    86 |   [01;36m[Krclcpp::Node * node[m[K,
+[3.477s]       |   [01;36m[K~~~~~~~~~~~~~~~^~~~[m[K
+[3.481s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:333:13:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kimage_rotate::ImageRotateNode[m[K’ to ‘[01m[Krclcpp::Node*[m[K’
+[3.481s]   333 |             [01;31m[K*this[m[K,
+[3.481s]       |             [01;31m[K^~~~~[m[K
+[3.481s]       |             [01;31m[K|[m[K
+[3.481s]       |             [01;31m[Kimage_rotate::ImageRotateNode[m[K
+[3.481s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:64:18:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kimage_transport::Subscriber image_transport::[01;32m[Kcreate_subscription[m[K(rclcpp::Node*, const std::string&, const Subscriber::Callback&, const std::string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions)[m[K’
+[3.481s]    64 |   [01;36m[Krclcpp::Node * node[m[K,
+[3.481s]       |   [01;36m[K~~~~~~~~~~~~~~~^~~~[m[K
+[3.482s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:[m[K In member function ‘[01m[Kvoid image_rotate::ImageRotateNode::[01;32m[KonInit[m[K()[m[K’:
+[3.482s] [01m[K/home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/src/image_rotate_node.cpp:349:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kimage_rotate::ImageRotateNode[m[K’ to ‘[01m[Krclcpp::Node*[m[K’
+[3.482s]   349 |   img_pub_ = image_transport::create_publisher([01;31m[K*this[m[K, topic, rclcpp::SystemDefaultsQoS(),
+[3.482s]       |                                                [01;31m[K^~~~~[m[K
+[3.482s]       |                                                [01;31m[K|[m[K
+[3.482s]       |                                                [01;31m[Kimage_rotate::ImageRotateNode[m[K
+[3.482s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:54:18:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kimage_transport::Publisher image_transport::[01;32m[Kcreate_publisher[m[K(rclcpp::Node*, const std::string&, rmw_qos_profile_t, rclcpp::PublisherOptions)[m[K’
+[3.482s]    54 |   [01;36m[Krclcpp::Node * node[m[K,
+[3.483s]       |   [01;36m[K~~~~~~~~~~~~~~~^~~~[m[K
+[5.043s] gmake[2]: *** [CMakeFiles/image_rotate.dir/build.make:76: CMakeFiles/image_rotate.dir/src/image_rotate_node.cpp.o] Ошибка 1
+[5.043s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/image_rotate.dir/all] Ошибка 2
+[5.044s] gmake: *** [Makefile:146: all] Ошибка 2

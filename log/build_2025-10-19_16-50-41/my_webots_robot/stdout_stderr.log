@@ -1,0 +1,14 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/webots/cpp/webots/Device.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/webots/cpp/webots/DistanceSensor.hpp:18[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/src/my_robot_node.cpp:4[m[K:
+[01m[K/opt/ros/jazzy/include/webots/cpp/webots/../../c/webots/types.h:25:2:[m[K [01;35m[Kwarning: [m[K#warning "mixing the C and C++ APIs in the same controller is not supported." [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   25 | #[01;35m[Kwarning[m[K "mixing the C and C++ APIs in the same controller is not supported."
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/src/my_robot_node.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Karm.h: Нет такого файла или каталога
+    6 | #include [01;31m[K"arm.h"[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_node.dir/build.make:76: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

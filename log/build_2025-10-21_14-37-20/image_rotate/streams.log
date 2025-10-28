@@ -1,0 +1,46 @@
+[0.339s] Invoking command in '/home/ubuntu/ros2_ws/build/image_rotate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/image_pipeline/image_rotate -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/image_rotate
+[0.431s] -- The C compiler identification is GNU 13.3.0
+[0.523s] -- The CXX compiler identification is GNU 13.3.0
+[0.552s] -- Detecting C compiler ABI info
+[0.711s] -- Detecting C compiler ABI info - done
+[0.722s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.723s] -- Detecting C compile features
+[0.723s] -- Detecting C compile features - done
+[0.739s] -- Detecting CXX compiler ABI info
+[0.920s] -- Detecting CXX compiler ABI info - done
+[0.933s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.934s] -- Detecting CXX compile features
+[0.934s] -- Detecting CXX compile features - done
+[0.942s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[1.223s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.789s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.823s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.861s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.892s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.143s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.153s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.294s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.310s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.328s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.480s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.480s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.480s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.553s] -- Found OpenCV: /usr (found version "4.6.0") found components: core imgproc 
+[2.567s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.603s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/image_rotate` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[2.605s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.607s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.607s] -- Configured cppcheck include dirs: /home/ubuntu/ros2_ws/src/image_pipeline/image_rotate/include
+[2.607s] -- Configured cppcheck exclude dirs and/or files: 
+[2.608s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.608s] -- Configured cpplint exclude dirs and/or files: 
+[2.609s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.609s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.610s] -- Added test 'lint_cmake' to check CMake code style
+[2.610s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.612s] -- Added test 'uncrustify' to check C / C++ code style
+[2.612s] -- Configured uncrustify additional arguments: 
+[2.613s] -- Added test 'xmllint' to check XML markup files
+[2.615s] -- Configuring done (2.3s)
+[2.642s] -- Generating done (0.0s)
+[2.649s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/image_rotate

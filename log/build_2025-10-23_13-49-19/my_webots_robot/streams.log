@@ -1,0 +1,85 @@
+[0.344s] Invoking command in '/home/ubuntu/ros2_ws/build/my_webots_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/my_webots_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/my_webots_robot
+[0.367s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.744s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.785s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.802s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.823s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.841s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.933s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.936s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.047s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.147s] -- Found webots_ros2_driver: 2025.0.0 (/opt/ros/jazzy/share/webots_ros2_driver/cmake)
+[1.248s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.250s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.514s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.514s]   Package 'webots_ros2_driver' exports library 'controller/libController.so'
+[1.514s]   which couldn't be found
+[1.514s] Call Stack (most recent call first):
+[1.514s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.515s]   CMakeLists.txt:6 (find_package)
+[1.515s] 
+[1.515s] [0m
+[1.519s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.520s]   Package 'webots_ros2_driver' exports library
+[1.520s]   'controller/libCppController.so' which couldn't be found
+[1.520s] Call Stack (most recent call first):
+[1.520s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.521s]   CMakeLists.txt:6 (find_package)
+[1.521s] 
+[1.521s] [0m
+[1.524s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.524s]   Package 'webots_ros2_driver' exports library 'controller/libdriver.so'
+[1.524s]   which couldn't be found
+[1.524s] Call Stack (most recent call first):
+[1.524s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.524s]   CMakeLists.txt:6 (find_package)
+[1.524s] 
+[1.524s] [0m
+[1.527s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.527s]   Package 'webots_ros2_driver' exports library 'controller/libCppDriver.so'
+[1.527s]   which couldn't be found
+[1.527s] Call Stack (most recent call first):
+[1.527s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.527s]   CMakeLists.txt:6 (find_package)
+[1.527s] 
+[1.527s] [0m
+[1.529s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.529s]   Package 'webots_ros2_driver' exports library 'controller/libcar.so' which
+[1.529s]   couldn't be found
+[1.529s] Call Stack (most recent call first):
+[1.530s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.530s]   CMakeLists.txt:6 (find_package)
+[1.530s] 
+[1.530s] [0m
+[1.531s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.532s]   Package 'webots_ros2_driver' exports library 'controller/libCppCar.so'
+[1.532s]   which couldn't be found
+[1.532s] Call Stack (most recent call first):
+[1.532s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.532s]   CMakeLists.txt:6 (find_package)
+[1.532s] 
+[1.532s] [0m
+[1.534s] [33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.534s]   Package 'webots_ros2_driver' exports library
+[1.534s]   'controller/libgeneric_robot_window.so' which couldn't be found
+[1.534s] Call Stack (most recent call first):
+[1.535s]   /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+[1.535s]   CMakeLists.txt:6 (find_package)
+[1.535s] 
+[1.535s] [0m
+[1.689s] -- Configuring done (1.3s)
+[1.697s] [31mCMake Error at CMakeLists.txt:14 (add_library):
+[1.697s]   Cannot find source file:
+[1.697s] 
+[1.697s]     /home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c
+[1.698s] 
+[1.698s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[1.698s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[1.698s]   .f95 .f03 .hip .ispc
+[1.698s] 
+[1.698s] [0m
+[1.704s] [31mCMake Error at CMakeLists.txt:14 (add_library):
+[1.704s]   No SOURCES given to target: youbot_control
+[1.704s] 
+[1.704s] [0m
+[1.704s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m

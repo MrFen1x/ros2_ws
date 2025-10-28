@@ -1,0 +1,2 @@
+[console_scripts]
+camera_node = my_cam_driver.camera_node:main

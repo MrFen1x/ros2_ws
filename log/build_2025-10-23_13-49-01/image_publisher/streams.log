@@ -1,0 +1,3 @@
+[0.409s] Invoking command in '/home/ubuntu/ros2_ws/build/image_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/image_publisher -- -j16 -l16
+[0.750s] gmake: *** Нет целей.  Останов.
+[0.761s] Invoked command in '/home/ubuntu/ros2_ws/build/image_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/image_publisher -- -j16 -l16

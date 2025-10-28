@@ -1,0 +1,132 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/KukaBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "KUKA youBot"
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation -0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation 0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.09730177893972648 0.965920517422031 0.23985395105838977 0.795257457421526
+  position -3.1664623498301268 -0.5864853115860628 2.8426464460790735
+}
+TexturedBackground {
+  texture "noon_cloudy_countryside"
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_countryside"
+}
+KukaBox {
+  translation -0.10540735028347381 -0.002898909219267556 0.41249580475087216
+  rotation 3.128884878643535e-05 -3.128897794967864e-05 -0.9999999990210038 1.5707933835674435
+}
+KukaBox {
+  translation -0.640714 1.5471 0.502483
+  rotation 7.249555234253146e-08 -8.393100125776509e-08 -0.9999999999999939 1.5707989064535226
+  name "Kuka box(1)"
+}
+Table {
+  translation -0.2 0.05 0
+  name "table(2)"
+  size 0.2 1 0.4
+}
+RectangleArena {
+  floorSize 10 10
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Youbot {
+  translation -0.579765055684516 2.3315319622677988e-05 0.10193299590549507
+  rotation -0.021669535667708503 0.999043841418332 0.03797149125394841 0.0019203834864359947
+  controller "lab1"
+  supervisor TRUE
+  bodySlot [
+    DistanceSensor {
+      translation 0 0 0.06
+      rotation 0 0 1 3.14159
+    }
+    Accelerometer {
+    }
+  ]
+}
+ConveyorBelt {
+  translation 0.65 3.52079e-14 0
+  rotation 0 0 1 3.14159
+  size 1.5 0.5 0.4
+  borderThickness 0.0001
+  borderHeight 0
+  speed 0.3
+}
+ConveyorBelt {
+  translation -0.130004 -1.43 0.02
+  rotation 0 0 1 -5.307179586466759e-06
+  name "conveyor belt(3)"
+  size 1.8 0.5 0.48
+  borderThickness 0.0001
+  borderHeight 0
+  speed 0.3
+}
+ConveyorBelt {
+  translation 1.02 -1.15 0.02
+  rotation 0 0 1 1.57079
+  name "conveyor belt(4)"
+  size 1.8 0.5 0.44
+  borderThickness 0.0001
+  borderHeight 0
+  speed 0.3
+}
+ConveyorBelt {
+  translation 1.15 1.15 -1.26586e-08
+  rotation 9.58979e-09 9.5898e-09 1 -1.5707953071795862
+  name "conveyor belt(1)"
+  size 1.8 0.5 0.44
+  borderThickness 0.0001
+  borderHeight 0
+  speed 0.3
+}
+ConveyorBelt {
+  translation 0.01 1.44 -1.8221e-08
+  rotation -0.018896108553928162 -9.897504480422099e-09 0.9998214526011723 1.01503e-06
+  name "conveyor belt(2)"
+  size 1.8 0.5 0.48
+  borderThickness 0.0001
+  borderHeight 0
+  speed 0.2
+}

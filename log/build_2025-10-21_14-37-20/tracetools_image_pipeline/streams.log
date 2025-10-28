@@ -1,0 +1,33 @@
+[0.066s] Invoking command in '/home/ubuntu/ros2_ws/build/tracetools_image_pipeline': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ubuntu/ros2_ws/src/image_pipeline/tracetools_image_pipeline -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/tracetools_image_pipeline
+[0.381s] -- The C compiler identification is GNU 13.3.0
+[0.381s] -- The CXX compiler identification is GNU 13.3.0
+[0.415s] -- Detecting C compiler ABI info
+[0.591s] -- Detecting C compiler ABI info - done
+[0.605s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.605s] -- Detecting C compile features
+[0.606s] -- Detecting C compile features - done
+[0.626s] -- Detecting CXX compiler ABI info
+[0.808s] -- Detecting CXX compiler ABI info - done
+[0.826s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.827s] -- Detecting CXX compile features
+[0.827s] -- Detecting CXX compile features - done
+[0.844s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.156s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.413s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[1.414s] -- Checking for module 'lttng-ust'
+[1.449s] --   Found lttng-ust, version 2.13.7
+[1.515s] -- LTTng found: tracing enabled
+[1.530s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.762s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.765s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.765s] -- Configured cppcheck include dirs: /usr/include/x86_64-linux-gnu
+[1.765s] -- Configured cppcheck exclude dirs and/or files: 
+[1.768s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.768s] -- Configured cpplint exclude dirs and/or files: 
+[1.770s] -- Added test 'lint_cmake' to check CMake code style
+[1.774s] -- Added test 'uncrustify' to check C / C++ code style
+[1.774s] -- Configured uncrustify additional arguments: 
+[1.775s] -- Added test 'xmllint' to check XML markup files
+[1.780s] -- Configuring done (1.7s)
+[1.790s] -- Generating done (0.0s)
+[1.794s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/tracetools_image_pipeline

@@ -1,0 +1,81 @@
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libController.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libCppController.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libdriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppDriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libcar.so' which
+  couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppCar.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libgeneric_robot_window.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+In file included from [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c:21[m[K:
+[01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/../libraries/youbot_control/include/base.h:24:10:[m[K [01;31m[Kfatal error: [m[Kwebots/types.h: Нет такого файла или каталога
+   24 | #include [01;31m[K<webots/types.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c:17[m[K:
+[01m[K/home/ubuntu/ros2_ws/src/my_webots_robot/../libraries/youbot_control/include/tiny_math.h:24:10:[m[K [01;31m[Kfatal error: [m[Kwebots/types.h: Нет такого файла или каталога
+   24 | #include [01;31m[K<webots/types.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c:23:10:[m[K [01;31m[Kfatal error: [m[Kwebots/motor.h: Нет такого файла или каталога
+   23 | #include [01;31m[K<webots/motor.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+[01m[K/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c:23:10:[m[K [01;31m[Kfatal error: [m[Kwebots/motor.h: Нет такого файла или каталога
+   23 | #include [01;31m[K<webots/motor.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:76: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c.o] Ошибка 1
+gmake[2]: *** Ожидание завершения заданий…
+gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:118: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c.o] Ошибка 1
+gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:90: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c.o] Ошибка 1
+gmake[2]: *** [CMakeFiles/youbot_control.dir/build.make:104: CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/youbot_control.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

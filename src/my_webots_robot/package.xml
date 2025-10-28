@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_webots_robot</name>
+  <version>0.0.1</version>
+  <description>Webots + ROS2 control for my robot</description>
+  <maintainer email="ilya@example.com">Илья</maintainer>
+  <license>MIT</license>
+
+  <depend>rclcpp</depend>
+  <depend>webots_ros2_driver</depend>
+  <depend>std_msgs</depend>
+  <depend>pluginlib</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+</package>

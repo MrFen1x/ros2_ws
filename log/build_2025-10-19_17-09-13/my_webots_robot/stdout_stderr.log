@@ -1,0 +1,85 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found webots_ros2_driver: 2025.0.0 (/opt/ros/jazzy/share/webots_ros2_driver/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libController.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libCppController.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libdriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppDriver.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libcar.so' which
+  couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library 'controller/libCppCar.so'
+  which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+[33mCMake Warning at /opt/ros/jazzy/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'webots_ros2_driver' exports library
+  'controller/libgeneric_robot_window.so' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+
+[0m
+-- Configuring done (1.2s)
+[31mCMake Error at CMakeLists.txt:13 (add_library):
+  Cannot find source file:
+
+    /home/ubuntu/ros2_ws/src/my_webots_robotlibraries/youbot_control/src/arm.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+  .f95 .f03 .hip .ispc
+
+[0m
+[31mCMake Error at CMakeLists.txt:13 (add_library):
+  No SOURCES given to target: youbot_control
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1
