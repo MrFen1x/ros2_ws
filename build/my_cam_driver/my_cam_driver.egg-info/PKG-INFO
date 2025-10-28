@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: my-cam-driver
-Version: 0.0.0
-Summary: Python camera driver package
-Maintainer: ubuntu
-Maintainer-email: ubuntu@todo.todo
-License: Apache License 2.0

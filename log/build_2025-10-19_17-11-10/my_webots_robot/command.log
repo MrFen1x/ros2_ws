@@ -1,2 +1,0 @@
-Invoking command in '/home/ubuntu/ros2_ws/build/my_webots_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/my_webots_robot -- -j16 -l16
-Invoked command in '/home/ubuntu/ros2_ws/build/my_webots_robot' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/my_webots_robot -- -j16 -l16

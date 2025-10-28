@@ -1,3 +1,0 @@
-[0.332s] Invoking command in '/home/ubuntu/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/my_package -- -j16 -l16
-[0.512s] [ 50%] [32m[1mLinking CXX shared library libmy_package.so[0m
-[1.204s] [100%] Built target my_package

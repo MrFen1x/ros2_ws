@@ -1,2 +1,0 @@
-image_rotate::ImageRotateNode;lib/libimage_rotate.so
-image_rotate::ImageFlipNode;lib/libimage_flip.so

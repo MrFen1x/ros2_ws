@@ -1,5 +1,0 @@
-[  5%] [32mBuilding CXX object CMakeFiles/image_view_nodes.dir/src/extract_images_node.cpp.o[0m
-[ 10%] [32mBuilding CXX object CMakeFiles/image_view_nodes.dir/src/image_view_node.cpp.o[0m
-[ 15%] [32mBuilding CXX object CMakeFiles/image_view_nodes.dir/src/image_saver_node.cpp.o[0m
-[ 21%] [32mBuilding CXX object CMakeFiles/image_view_nodes.dir/src/stereo_view_node.cpp.o[0m
-[ 26%] [32mBuilding CXX object CMakeFiles/image_view_nodes.dir/src/video_recorder_node.cpp.o[0m

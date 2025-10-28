@@ -1,2 +1,0 @@
-/usr/bin/ar qc libyoubot_control.a CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/arm.c.o CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/base.c.o CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/gripper.c.o CMakeFiles/youbot_control.dir/home/ubuntu/ros2_ws/src/libraries/youbot_control/src/tiny_math.c.o
-/usr/bin/ranlib libyoubot_control.a

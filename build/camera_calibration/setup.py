@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/src/image_pipeline/camera_calibration/setup.py
