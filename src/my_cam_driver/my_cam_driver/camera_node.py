@@ -11,7 +11,7 @@ class StereoCameraNode(Node):
         super().__init__('stereo_camera_node')
 
         # Параметры камеры
-        self.camera_device = '/dev/video2'
+        self.camera_device = '/dev/video0'
         self.WIDTH = 2560
         self.HEIGHT = 720
         self.FPS = 30
@@ -79,10 +79,18 @@ class StereoCameraNode(Node):
         ros_image.header.stamp = self.get_clock().now().to_msg()
         ros_image.header.frame_id = f"{frame_name}_camera_frame"
 
-        info_msg = info_mgr.getCameraInfo()
-        info_msg.header = ros_image.header
-        info_msg.width = cv_image.shape[1]
-        info_msg.height = cv_image.shape[0]
+    # Если калибровка есть, берем через CameraInfoManager
+        try:
+            info_msg = info_mgr.getCameraInfo()
+            info_msg.header = ros_image.header
+        except Exception:
+        # Заглушка, чтобы нода не падала
+            from sensor_msgs.msg import CameraInfo
+            info_msg = CameraInfo()
+            info_msg.header = ros_image.header
+            info_msg.width = cv_image.shape[1]
+            info_msg.height = cv_image.shape[0]
+            info_msg.distortion_model = "plumb_bob"
 
         img_pub.publish(ros_image)
         info_pub.publish(info_msg)
