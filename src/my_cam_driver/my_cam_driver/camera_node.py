@@ -16,6 +16,12 @@ class StereoCameraNode(Node):
         self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
 
 
+        # Параметры камеры
+        self.camera_device = '/dev/video0'
+        self.WIDTH = 2560
+        self.HEIGHT = 720
+        self.FPS = 30
+
         self.create_service(
             SetCameraInfo, '/stereo/left/set_camera_info', self.handle_set_camera_info_left
         )
