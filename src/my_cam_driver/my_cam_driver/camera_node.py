@@ -16,7 +16,7 @@ class StereoCameraNode(Node):
         self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
 
 
-       self.create_service(
+        self.create_service(
             SetCameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left
         )
         self.create_service(
