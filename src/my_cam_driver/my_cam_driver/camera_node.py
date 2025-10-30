@@ -11,8 +11,8 @@ class StereoCameraNode(Node):
         super().__init__('stereo_camera_node')
         ...
         # Инициализация менеджеров
-    self.left_info_mgr = CameraInfoManager(self, cname='left_camera', namespace='left_camera')
-    self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
+        self.left_info_mgr = CameraInfoManager(self, cname='left_camera', namespace='left_camera')
+        self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
 
 
         # Создаём сервисы для совместимости с camera_calibration
