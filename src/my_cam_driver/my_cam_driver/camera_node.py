@@ -16,14 +16,12 @@ class StereoCameraNode(Node):
         self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
 
 
-        # Создаём сервисы для совместимости с camera_calibration
-        self.create_service(
-            CameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left
+       self.create_service(
+            SetCameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left
         )
         self.create_service(
-            CameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right
+            SetCameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right
         )
-        ...
     
     def handle_set_camera_info_left(self, request, response):
         """Обработчик сервиса установки калибровки для левой камеры"""
