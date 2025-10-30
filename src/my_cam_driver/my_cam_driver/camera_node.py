@@ -11,8 +11,9 @@ class StereoCameraNode(Node):
         super().__init__('stereo_camera_node')
         ...
         # Инициализация менеджеров
-        self.left_info_mgr = CameraInfoManager(cname='left_camera', namespace='left_camera')
-        self.right_info_mgr = CameraInfoManager(cname='right_camera', namespace='right_camera')
+    self.left_info_mgr = CameraInfoManager(self, cname='left_camera', namespace='left_camera')
+    self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
+
 
         # Создаём сервисы для совместимости с camera_calibration
         self.create_service(
@@ -38,7 +39,6 @@ class StereoCameraNode(Node):
         else:
             response.success = False
         return response
-    
     def init_camera_mjpg(self):
         """Инициализация камеры с MJPG"""
         self.cap = cv2.VideoCapture(self.camera_device, cv2.CAP_V4L2)
