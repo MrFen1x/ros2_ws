@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
+from sensor_msgs.srv import SetCameraInfo
 from cv_bridge import CvBridge
 from camera_info_manager import CameraInfoManager
 import cv2
