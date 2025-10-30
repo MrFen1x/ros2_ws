@@ -9,34 +9,36 @@ import cv2
 class StereoCameraNode(Node):
     def __init__(self):
         super().__init__('stereo_camera_node')
+        ...
+        # Инициализация менеджеров
+        self.left_info_mgr = CameraInfoManager(cname='left_camera', namespace='left_camera')
+        self.right_info_mgr = CameraInfoManager(cname='right_camera', namespace='right_camera')
 
-        # Параметры камеры
-        self.camera_device = '/dev/video0'
-        self.WIDTH = 2560
-        self.HEIGHT = 720
-        self.FPS = 30
-
-        self.get_logger().info(f"Открываем камеру: {self.camera_device}")
-
-        # --- CameraInfoManager для левой и правой камер ---
-        self.left_info_mgr = CameraInfoManager(self, 'left', '')
-        self.right_info_mgr = CameraInfoManager(self, 'right', '')
-
-        # --- Публикаторы изображений и CameraInfo ---
-        self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', 10)
-        self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', 10)
-        self.left_info_pub = self.create_publisher(CameraInfo, 'stereo/left/camera_info', 10)
-        self.right_info_pub = self.create_publisher(CameraInfo, 'stereo/right/camera_info', 10)
-
-        self.bridge = CvBridge()
-        self.cap = None
-
-        if self.init_camera_mjpg():
-            self.timer = self.create_timer(1.0 / self.FPS, self.timer_callback)
-            self.get_logger().info("Стерео камера успешно инициализирована")
+        # Создаём сервисы для совместимости с camera_calibration
+        self.create_service(
+            CameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left
+        )
+        self.create_service(
+            CameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right
+        )
+        ...
+    
+    def handle_set_camera_info_left(self, request, response):
+        """Обработчик сервиса установки калибровки для левой камеры"""
+        if self.left_info_mgr.set_camera_info(request.camera_info):
+            response.success = True
         else:
-            self.get_logger().error("Не удалось инициализировать камеру")
+            response.success = False
+        return response
 
+    def handle_set_camera_info_right(self, request, response):
+        """Обработчик сервиса установки калибровки для правой камеры"""
+        if self.right_info_mgr.set_camera_info(request.camera_info):
+            response.success = True
+        else:
+            response.success = False
+        return response
+    
     def init_camera_mjpg(self):
         """Инициализация камеры с MJPG"""
         self.cap = cv2.VideoCapture(self.camera_device, cv2.CAP_V4L2)
