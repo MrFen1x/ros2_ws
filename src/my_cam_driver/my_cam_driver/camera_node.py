@@ -17,10 +17,10 @@ class StereoCameraNode(Node):
 
 
         self.create_service(
-            SetCameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left
+            SetCameraInfo, '/stereo/left/set_camera_info', self.handle_set_camera_info_left
         )
         self.create_service(
-            SetCameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right
+            SetCameraInfo, '/stereo/right/set_camera_info', self.handle_set_camera_info_right
         )
     
     def handle_set_camera_info_left(self, request, response):
