@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
+from sensor_msgs.srv import SetCameraInfo
 from cv_bridge import CvBridge
 from camera_info_manager import CameraInfoManager
 import cv2
@@ -10,33 +11,52 @@ class StereoCameraNode(Node):
     def __init__(self):
         super().__init__('stereo_camera_node')
 
-        # Параметры камеры
-        self.camera_device = '/dev/video0'
+        self.cap = None
+        self.bridge = CvBridge()
+
+        self.camera_device = "/dev/video0"
         self.WIDTH = 2560
         self.HEIGHT = 720
         self.FPS = 30
 
-        self.get_logger().info(f"Открываем камеру: {self.camera_device}")
+        self.left_info_mgr = CameraInfoManager(self, cname='left_camera', namespace='left_camera')
+        self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
 
-        # --- CameraInfoManager для левой и правой камер ---
-        self.left_info_mgr = CameraInfoManager(self, 'left', '')
-        self.right_info_mgr = CameraInfoManager(self, 'right', '')
+        self.create_service(SetCameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left)
+        self.create_service(SetCameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right)
 
-        # --- Публикаторы изображений и CameraInfo ---
-        self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', 10)
-        self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', 10)
-        self.left_info_pub = self.create_publisher(CameraInfo, 'stereo/left/camera_info', 10)
-        self.right_info_pub = self.create_publisher(CameraInfo, 'stereo/right/camera_info', 10)
+        self.left_image_pub = self.create_publisher(Image, 'left_camera/image_raw', 10)
+        self.right_image_pub = self.create_publisher(Image, 'right_camera/image_raw', 10)
+        self.left_info_pub = self.create_publisher(CameraInfo, 'left_camera/camera_info', 10)
+        self.right_info_pub = self.create_publisher(CameraInfo, 'right_camera/camera_info', 10)
 
-        self.bridge = CvBridge()
-        self.cap = None
+        if not self.init_camera_mjpg():
+            self.get_logger().error("Не удалось инициализировать камеру. Завершение работы.")
+            rclpy.shutdown()
+            return
 
-        if self.init_camera_mjpg():
-            self.timer = self.create_timer(1.0 / self.FPS, self.timer_callback)
-            self.get_logger().info("Стерео камера успешно инициализирована")
+        self.timer = self.create_timer(1.0 / self.FPS, self.timer_callback)
+
+    def handle_set_camera_info_left(self, request, response):
+        """Обработчик сервиса установки калибровки для левой камеры"""
+        if self.left_info_mgr.set_camera_info(request.camera_info):
+            response.success = True
+            response.status_message = "Left camera info updated successfully."
         else:
-            self.get_logger().error("Не удалось инициализировать камеру")
+            response.success = False
+            response.status_message = "Failed to update left camera info."
+        return response
 
+    def handle_set_camera_info_right(self, request, response):
+        """Обработчик сервиса установки калибровки для правой камеры"""
+        if self.right_info_mgr.set_camera_info(request.camera_info):
+            response.success = True
+            response.status_message = "Right camera info updated successfully."
+        else:
+            response.success = False
+            response.status_message = "Failed to update right camera info."
+        return response
+    
     def init_camera_mjpg(self):
         """Инициализация камеры с MJPG"""
         self.cap = cv2.VideoCapture(self.camera_device, cv2.CAP_V4L2)
