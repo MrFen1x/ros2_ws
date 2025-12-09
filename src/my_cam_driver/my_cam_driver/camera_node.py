@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
@@ -7,17 +8,18 @@ from cv_bridge import CvBridge
 from camera_info_manager import CameraInfoManager
 import cv2
 
+
 class StereoCameraNode(Node):
     def __init__(self):
         super().__init__('stereo_camera_node')
+
 
         self.cap = None
         self.bridge = CvBridge()
 
         self.camera_device = "/dev/video0"
-        self.WIDTH = 2560
-        self.HEIGHT = 720
-        self.FPS = 30
+
+
 
         self.left_info_mgr = CameraInfoManager(self, cname='left_camera', namespace='left_camera')
         self.right_info_mgr = CameraInfoManager(self, cname='right_camera', namespace='right_camera')
@@ -77,6 +79,8 @@ class StereoCameraNode(Node):
         self.get_logger().info(f"Камера готова: {frame.shape[1]}x{frame.shape[0]}")
         return True
 
+    # ---------------------- TIMER CALLBACK ----------------------
+
     def timer_callback(self):
         if not self.cap or not self.cap.isOpened():
             return
@@ -94,26 +98,21 @@ class StereoCameraNode(Node):
         self.publish_image(left_image, self.left_image_pub, self.left_info_pub, self.left_info_mgr, "left")
         self.publish_image(right_image, self.right_image_pub, self.right_info_pub, self.right_info_mgr, "right")
 
+    # ---------------------- IMAGE PUBLISH ----------------------
+
     def publish_image(self, cv_image, img_pub, info_pub, info_mgr, frame_name):
         ros_image = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
         ros_image.header.stamp = self.get_clock().now().to_msg()
         ros_image.header.frame_id = f"{frame_name}_camera_frame"
 
-    # Если калибровка есть, берем через CameraInfoManager
-        try:
-            info_msg = info_mgr.getCameraInfo()
-            info_msg.header = ros_image.header
-        except Exception:
-        # Заглушка, чтобы нода не падала
-            from sensor_msgs.msg import CameraInfo
-            info_msg = CameraInfo()
-            info_msg.header = ros_image.header
-            info_msg.width = cv_image.shape[1]
-            info_msg.height = cv_image.shape[0]
-            info_msg.distortion_model = "plumb_bob"
+        info_msg = info_mgr.getCameraInfo()
+        info_msg.header = ros_image.header
 
         img_pub.publish(ros_image)
         info_pub.publish(info_msg)
+
+
+# ---------------------- MAIN ----------------------
 
 def main(args=None):
     rclpy.init(args=args)
@@ -127,6 +126,7 @@ def main(args=None):
             node.cap.release()
         node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()
