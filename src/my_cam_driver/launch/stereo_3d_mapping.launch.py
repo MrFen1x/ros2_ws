@@ -6,35 +6,36 @@ def generate_launch_description():
     
     # === 1. Статические TF ===
     # odom → base_link (пока статичный, потом можно подключить одометрию)
+    # Формат: [x, y, z, roll, pitch, yaw, quaternion_w, parent, child]
     odom_to_baselink = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='odom_to_baselink',
-        arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_link']
+        arguments=['0', '0', '0', '0', '0', '0', '1', 'odom', 'base_link']
     )
 
     # base_link → camera_link (камера на роботе)
-    # Настрой под своё расположение камеры!
     baselink_to_camera = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='baselink_to_camera',
-        arguments=['0.2', '0', '0.3', '0', '0', '0', 'base_link', 'camera_link']
+        arguments=['0.2', '0', '0.3', '0', '0', '0', '1', 'base_link', 'camera_link']
     )
 
-    # camera_link → камеры
+    # camera_link → left_camera_frame
     camera_to_left = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='camera_to_left',
-        arguments=['0', '0', '0', '0', '0', '0', 'camera_link', 'left_camera_frame']
+        arguments=['0', '0', '0', '0', '0', '0', '1', 'camera_link', 'left_camera_frame']
     )
 
+    # camera_link → right_camera_frame
     camera_to_right = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='camera_to_right',
-        arguments=['0', '-0.06', '0', '0', '0', '0', 'camera_link', 'right_camera_frame']
+        arguments=['0', '-0.06', '0', '0', '0', '0', '1', 'camera_link', 'right_camera_frame']
     )
 
     # === 2. Нода камеры ===

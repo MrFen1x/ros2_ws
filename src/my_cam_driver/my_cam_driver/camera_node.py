@@ -196,6 +196,12 @@ class StereoCameraNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = StereoCameraNode()
+    
+    # Проверяем что нода создана успешно
+    if node.cap is None:
+        # Камера не инициализировалась, нода уже вызвала rclpy.shutdown()
+        return
+    
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
