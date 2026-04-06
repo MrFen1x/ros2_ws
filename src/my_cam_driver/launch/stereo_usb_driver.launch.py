@@ -13,6 +13,8 @@ def generate_launch_description():
                 'width': 640,
                 'height': 480,
                 'fps': 15,
+                'use_compression': True,    # Включить JPEG сжатие
+                'jpeg_quality': 60,         # Качество 0-100
             }]
         )
     ])

@@ -7,7 +7,9 @@ from sensor_msgs.msg import Image, CameraInfo
 from sensor_msgs.srv import SetCameraInfo
 from cv_bridge import CvBridge
 from camera_info_manager import CameraInfoManager
+from sensor_msgs.msg import CompressedImage
 import cv2
+import numpy as np
 
 
 class StereoCameraNode(Node):
@@ -22,11 +24,17 @@ class StereoCameraNode(Node):
         self.declare_parameter('width', 640)
         self.declare_parameter('height', 480)
         self.declare_parameter('fps', 15)
+        
+        # Настройки сжатия JPEG
+        self.declare_parameter('use_compression', True)  # Включить сжатие
+        self.declare_parameter('jpeg_quality', 60)       # Качество JPEG (0-100)
 
         self.camera_device = self.get_parameter('camera_device').value
         self.WIDTH = self.get_parameter('width').value
         self.HEIGHT = self.get_parameter('height').value
         self.FPS = self.get_parameter('fps').value
+        self.use_compression = self.get_parameter('use_compression').value
+        self.jpeg_quality = self.get_parameter('jpeg_quality').value
 
         # Папка для хранения калибровок
         calib_dir = os.path.expanduser("~/.ros/camera_info")
@@ -53,9 +61,17 @@ class StereoCameraNode(Node):
             history=HistoryPolicy.KEEP_LAST
         )
 
-        # Паблишеры с BEST_EFFORT QoS
-        self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', image_qos)
-        self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', image_qos)
+        # Паблишеры для СЖАТЫХ изображений (для WiFi)
+        if self.use_compression:
+            self.left_image_pub = self.create_publisher(CompressedImage, 'stereo/left/image_raw/compressed', image_qos)
+            self.right_image_pub = self.create_publisher(CompressedImage, 'stereo/right/image_raw/compressed', image_qos)
+            self.get_logger().info(f"✅ Сжатие JPEG включено (качество: {self.jpeg_quality})")
+        else:
+            # Паблишеры для сырых изображений
+            self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', image_qos)
+            self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', image_qos)
+            self.get_logger().info("❌ Сжатие отключено (RAW режим)")
+
         self.left_info_pub = self.create_publisher(CameraInfo, 'stereo/left/camera_info', 10)
         self.right_info_pub = self.create_publisher(CameraInfo, 'stereo/right/camera_info', 10)
 
@@ -147,18 +163,31 @@ class StereoCameraNode(Node):
     # ---------------------- IMAGE PUBLISH ----------------------
 
     def publish_image(self, cv_image, img_pub, info_pub, info_mgr, frame_name, stamp):
-        ros_image = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
-
-        # 🔥 используем ОДИН stamp
-        ros_image.header.stamp = stamp
-        ros_image.header.frame_id = f"{frame_name}_camera_frame"
-
+        # Публикуем CameraInfo
         info_msg = info_mgr.getCameraInfo()
         info_msg.header.stamp = stamp
-        info_msg.header.frame_id = ros_image.header.frame_id
-
-        img_pub.publish(ros_image)
+        info_msg.header.frame_id = f"{frame_name}_camera_frame"
         info_pub.publish(info_msg)
+
+        # Публикуем изображение (сжатое или сырое)
+        if self.use_compression:
+            # Сжатие JPEG
+            encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), self.jpeg_quality]
+            _, compressed_data = cv2.imencode('.jpg', cv_image, encode_param)
+            
+            compressed_msg = CompressedImage()
+            compressed_msg.header.stamp = stamp
+            compressed_msg.header.frame_id = f"{frame_name}_camera_frame"
+            compressed_msg.format = "jpeg"
+            compressed_msg.data = compressed_data.tobytes()
+            
+            img_pub.publish(compressed_msg)
+        else:
+            # Сырое изображение
+            ros_image = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
+            ros_image.header.stamp = stamp
+            ros_image.header.frame_id = f"{frame_name}_camera_frame"
+            img_pub.publish(ros_image)
 
 
 # ---------------------- MAIN ----------------------
