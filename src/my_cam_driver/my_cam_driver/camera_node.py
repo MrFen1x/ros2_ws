@@ -154,9 +154,10 @@ class StereoCameraNode(Node):
         left_image = frame[:, :half_width, :]
         right_image = frame[:, half_width:, :]
 
+        # Публикуем ОБЕ камеры (RViz2 сам отбросит лишнее)
         self.publish_image(left_image, self.left_image_pub, self.left_info_pub,
                         self.left_info_mgr, "left", stamp)
-
+        
         self.publish_image(right_image, self.right_image_pub, self.right_info_pub,
                         self.right_info_mgr, "right", stamp)
 
