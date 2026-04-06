@@ -2,6 +2,7 @@
 import os
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data, QoSProfile, ReliabilityPolicy, HistoryPolicy
 from sensor_msgs.msg import Image, CameraInfo
 from sensor_msgs.srv import SetCameraInfo
 from cv_bridge import CvBridge
@@ -16,11 +17,16 @@ class StereoCameraNode(Node):
         self.bridge = CvBridge()
         self.cap = None
 
-        # Настройки камеры
-        self.camera_device = "/dev/video2"
-        self.WIDTH = 2560
-        self.HEIGHT = 720
-        self.FPS = 30
+        # Настройки камеры (теперь параметризуемые)
+        self.declare_parameter('camera_device', '/dev/video0')
+        self.declare_parameter('width', 640)
+        self.declare_parameter('height', 480)
+        self.declare_parameter('fps', 15)
+
+        self.camera_device = self.get_parameter('camera_device').value
+        self.WIDTH = self.get_parameter('width').value
+        self.HEIGHT = self.get_parameter('height').value
+        self.FPS = self.get_parameter('fps').value
 
         # Папка для хранения калибровок
         calib_dir = os.path.expanduser("~/.ros/camera_info")
@@ -40,11 +46,20 @@ class StereoCameraNode(Node):
         self.create_service(SetCameraInfo, 'left_camera/set_camera_info', self.handle_set_camera_info_left)
         self.create_service(SetCameraInfo, 'right_camera/set_camera_info', self.handle_set_camera_info_right)
 
-        # Паблишеры
-        self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', 10)
-        self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', 10)
+        # QoS профиль для видео по WiFi (BEST_EFFORT)
+        image_qos = QoSProfile(
+            depth=1,
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+            history=HistoryPolicy.KEEP_LAST
+        )
+
+        # Паблишеры с BEST_EFFORT QoS
+        self.left_image_pub = self.create_publisher(Image, 'stereo/left/image_raw', image_qos)
+        self.right_image_pub = self.create_publisher(Image, 'stereo/right/image_raw', image_qos)
         self.left_info_pub = self.create_publisher(CameraInfo, 'stereo/left/camera_info', 10)
         self.right_info_pub = self.create_publisher(CameraInfo, 'stereo/right/camera_info', 10)
+
+        self.get_logger().info(f"Настройки камеры: {self.WIDTH}x{self.HEIGHT} @ {self.FPS} FPS")
 
         # Инициализация камеры
         if not self.init_camera_mjpg():
@@ -114,23 +129,33 @@ class StereoCameraNode(Node):
             self.get_logger().warn("Не удалось получить кадр с камеры")
             return
 
+        # 🔥 ЕДИНЫЙ timestamp для всего кадра
+        stamp = self.get_clock().now().to_msg()
+
         height, width = frame.shape[:2]
         half_width = width // 2
+
         left_image = frame[:, :half_width, :]
         right_image = frame[:, half_width:, :]
 
-        self.publish_image(left_image, self.left_image_pub, self.left_info_pub, self.left_info_mgr, "left")
-        self.publish_image(right_image, self.right_image_pub, self.right_info_pub, self.right_info_mgr, "right")
+        self.publish_image(left_image, self.left_image_pub, self.left_info_pub,
+                        self.left_info_mgr, "left", stamp)
+
+        self.publish_image(right_image, self.right_image_pub, self.right_info_pub,
+                        self.right_info_mgr, "right", stamp)
 
     # ---------------------- IMAGE PUBLISH ----------------------
 
-    def publish_image(self, cv_image, img_pub, info_pub, info_mgr, frame_name):
+    def publish_image(self, cv_image, img_pub, info_pub, info_mgr, frame_name, stamp):
         ros_image = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
-        ros_image.header.stamp = self.get_clock().now().to_msg()
+
+        # 🔥 используем ОДИН stamp
+        ros_image.header.stamp = stamp
         ros_image.header.frame_id = f"{frame_name}_camera_frame"
 
         info_msg = info_mgr.getCameraInfo()
-        info_msg.header = ros_image.header
+        info_msg.header.stamp = stamp
+        info_msg.header.frame_id = ros_image.header.frame_id
 
         img_pub.publish(ros_image)
         info_pub.publish(info_msg)

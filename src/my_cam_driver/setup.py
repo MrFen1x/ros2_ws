@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'camera_node = my_cam_driver.camera_node:main',
+            'stereo_usb_driver = my_cam_driver.camera_node:main',
         ],
     },
 )
