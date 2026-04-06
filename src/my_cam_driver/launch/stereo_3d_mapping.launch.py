@@ -62,6 +62,7 @@ def generate_launch_description():
             'odom_frame_id': 'odom',
             'publish_tf': False,  # Пока без одометрии
             'approx_sync': True,
+            'visual_odometry': True, 
             
             # Настройки стерео
             'stereo': True,
