@@ -1,15 +1,11 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import PathJoinSubstitution
-from ament_index_python.packages import get_package_share_directory
 import os
 
 
 def generate_launch_description():
     
-    # === 1. Нода камеры (уже есть) ===
+    # === 1. Нода камеры ===
     camera_node = Node(
         package='my_cam_driver',
         executable='stereo_usb_driver',
@@ -19,16 +15,18 @@ def generate_launch_description():
             'width': 640,
             'height': 480,
             'fps': 10,
-            'use_compression': False,  # Для stereo_image_proc нужен RAW
-            'jpeg_quality': 60,
+            'use_compression': False,  # Для 3D нужен RAW
         }]
     )
 
     # === 2. Stereo Image Proc (disparity → pointcloud) ===
-    stereo_image_proc = Node(
+    # В Jazzy это отдельные ноды
+    
+    # Disparity из стерео пары
+    disparity_node = Node(
         package='stereo_image_proc',
-        executable='stereo_image_proc',
-        name='stereo_image_proc',
+        executable='disparity_node',
+        name='disparity',
         output='screen',
         remappings=[
             ('left/image_rect', '/stereo/left/image_raw'),
@@ -38,8 +36,25 @@ def generate_launch_description():
         ],
         parameters=[{
             'approximate_sync': True,
-            'approximate_sync_tolerance': '0.01',
-            'disparity_range': 128,
+            'approximate_sync_tolerance_sec': 0.01,
+        }]
+    )
+
+    # PointCloud2 из disparity
+    point_cloud_node = Node(
+        package='stereo_image_proc',
+        executable='point_cloud_node',
+        name='point_cloud',
+        output='screen',
+        remappings=[
+            ('left/image_rect', '/stereo/left/image_raw'),
+            ('left/camera_info', '/stereo/left/camera_info'),
+            ('right/image_rect', '/stereo/right/image_raw'),
+            ('right/camera_info', '/stereo/right/camera_info'),
+        ],
+        parameters=[{
+            'approximate_sync': True,
+            'approximate_sync_tolerance_sec': 0.01,
         }]
     )
 
@@ -54,34 +69,25 @@ def generate_launch_description():
             ('right/image_rect', '/stereo/right/image_raw'),
             ('left/camera_info', '/stereo/left/camera_info'),
             ('right/camera_info', '/stereo/right/camera_info'),
-            ('stereo_camera', '/stereo'),  # Базовый топик
         ],
         parameters=[{
             # Общие настройки
             'frame_id': 'base_link',
-            'odom_frame_id': 'odom',
-            'publish_tf': False,  # Пока без одометрии
+            'publish_tf': False,
             'approx_sync': True,
-            'visual_odometry': True, 
             
             # Настройки стерео
-            'stereo': True,
             'subscribe_stereo': True,
-            'stereo_sync': True,
             
-            # Качество карты
-            'RGBD/ProximityBySpace': 'true',
-            'RGBD/OptimizeFromGraphEnd': 'false',
-            'Grid/FromDepth': 'true',
-            
-            # Для WiFi - уменьшить трафик
-            'Rtabmap/DetectionRate': '1.0',  # 1 Hz
-            'RGBD/ImagePreDecimation': '2',   # Уменьшить разрешение
+            # Для WiFi - реже обновления
+            'Rtabmap/DetectionRate': '1.0',
+            'RGBD/ImagePreDecimation': '2',
         }]
     )
 
     return LaunchDescription([
         camera_node,
-        stereo_image_proc,
+        disparity_node,
+        point_cloud_node,
         rtabmap_node,
     ])
