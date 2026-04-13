@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Read(//home/ubuntu/**)"
+      "Read(//home/ubuntu/**)",
+      "Bash(mkdir *)",
+      "Bash(colcon *)",
+      "Bash(check_urdf *)",
+      "Bash(xacro *)",
+      "Bash(check_urdf)"
     ]
-  }
+  },
+  "$version": 3
 }

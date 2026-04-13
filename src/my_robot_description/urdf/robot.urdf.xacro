@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="telega">
+
+  <!-- ==================== Properties ==================== -->
+  <xacro:property name="base_length" value="0.6"/>
+  <xacro:property name="base_width" value="0.3"/>
+  <xacro:property name="base_height" value="0.2"/>
+  <xacro:property name="wheel_radius" value="0.035"/>
+  <xacro:property name="wheel_length" value="0.035"/>
+  <xacro:property name="base_mass" value="5.0"/>
+  <xacro:property name="wheel_mass" value="0.5"/>
+
+  <!-- ==================== Macros ==================== -->
+  <xacro:macro name="wheel_link" params="name">
+    <link name="${name}">
+      <visual>
+        <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_length}" radius="${wheel_radius}"/>
+        </geometry>
+        <material name="dark_gray"/>
+      </visual>
+      <collision>
+        <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+        <geometry>
+          <cylinder length="${wheel_length}" radius="${wheel_radius}"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${wheel_mass}"/>
+        <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="wheel_joint" params="name parent x y z">
+    <joint name="${name}_joint" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <origin rpy="0 0 0" xyz="${x} ${y} ${z}"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- ==================== Materials ==================== -->
+  <material name="blue">
+    <color rgba="0.2 0.4 0.8 1.0"/>
+  </material>
+  <material name="dark_gray">
+    <color rgba="0.3 0.3 0.3 1.0"/>
+  </material>
+
+  <!-- ==================== Base Link ==================== -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${base_mass}"/>
+      <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05"/>
+    </inertial>
+  </link>
+
+  <!-- ==================== Wheels ==================== -->
+  <!-- Left wheels -->
+  <xacro:wheel_link name="left_front_wheel"/>
+  <xacro:wheel_link name="left_back_wheel"/>
+
+  <!-- Right wheels -->
+  <xacro:wheel_link name="right_front_wheel"/>
+  <xacro:wheel_link name="right_back_wheel"/>
+
+  <!-- Wheel joints -->
+  <xacro:wheel_joint name="left_front_wheel" parent="base_link"
+                     x="${base_length/2 - 0.1}" y="${base_width/2 + wheel_length/2}" z="${-base_height/2 - wheel_radius + 0.01}"/>
+  <xacro:wheel_joint name="left_back_wheel" parent="base_link"
+                     x="${-base_length/2 + 0.1}" y="${base_width/2 + wheel_length/2}" z="${-base_height/2 - wheel_radius + 0.01}"/>
+  <xacro:wheel_joint name="right_front_wheel" parent="base_link"
+                     x="${base_length/2 - 0.1}" y="${-base_width/2 - wheel_length/2}" z="${-base_height/2 - wheel_radius + 0.01}"/>
+  <xacro:wheel_joint name="right_back_wheel" parent="base_link"
+                     x="${-base_length/2 + 0.1}" y="${-base_width/2 - wheel_length/2}" z="${-base_height/2 - wheel_radius + 0.01}"/>
+
+</robot>
