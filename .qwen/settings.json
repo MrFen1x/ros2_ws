@@ -6,7 +6,9 @@
       "Bash(colcon *)",
       "Bash(check_urdf *)",
       "Bash(xacro *)",
-      "Bash(check_urdf)"
+      "Bash(check_urdf)",
+      "Bash(ldconfig *)",
+      "Bash(ros2 *)"
     ]
   },
   "$version": 3
