@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/main.cc.o[0m
+In file included from [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:15[m[K:
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_struct.h:36:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   36 |   uint8_t [01;35m[Kpayload[m[K[];
+      |           [01;35m[K^~~~~~~[m[K
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:[m[K In constructor ‘[01m[KSipeedTOF_MSA010_Publisher::SipeedTOF_MSA010_Publisher()[m[K’:
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:86:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktmp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   86 |     uint32_t [01;35m[Ktmp[m[K;
+      |              [01;35m[K^~~[m[K
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:[m[K In member function ‘[01m[Kvoid SipeedTOF_MSA010_Publisher::timer_callback()[m[K’:
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:192:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  192 |     for (int j = 0; [01;35m[Kj < pcmsg.height[m[K; j++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:193:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  193 |       for (int i = 0; [01;35m[Ki < pcmsg.width[m[K; i++) {
+      |                       [01;35m[K~~^~~~~~~~~~~~~[m[K
+[ 40%] [32m[1mLinking CXX executable publisher[0m
+[100%] Built target publisher
+-- Install configuration: "Release"
+-- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher
+-- Set runtime path of "/home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher" to ""
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/package_run_dependencies/sipeed_tof_ms_a010
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/parent_prefix_path/sipeed_tof_ms_a010
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.sh
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.sh
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.dsv
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.bash
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.sh
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.zsh
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.dsv
+-- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.dsv
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/packages/sipeed_tof_ms_a010
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config.cmake
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config-version.cmake
+-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.xml

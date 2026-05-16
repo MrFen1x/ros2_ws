@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000270] (-) JobUnselected: {'identifier': 'sipeed_tof'}
+[0.000320] (-) JobUnselected: {'identifier': 'sipeed_tof_cpp'}
+[0.000357] (-) JobUnselected: {'identifier': 'sipeed_tof_cpp'}
+[0.000397] (sipeed_tof_ms_a010) JobQueued: {'identifier': 'sipeed_tof_ms_a010', 'dependencies': OrderedDict()}
+[0.001673] (sipeed_tof_ms_a010) JobStarted: {'identifier': 'sipeed_tof_ms_a010'}
+[0.017129] (sipeed_tof_ms_a010) JobProgress: {'identifier': 'sipeed_tof_ms_a010', 'progress': 'cmake'}
+[0.018579] (sipeed_tof_ms_a010) JobProgress: {'identifier': 'sipeed_tof_ms_a010', 'progress': 'build'}
+[0.020133] (sipeed_tof_ms_a010) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lya/ros2_ws/build/sipeed_tof_ms_a010', '--', '-j16', '-l16'], 'cwd': '/home/lya/ros2_ws/build/sipeed_tof_ms_a010', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lya'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/antigravity/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('ANTIGRAVITY_CLI_ALIAS', 'agy'), ('HOME', '/home/lya'), ('CHROME_DESKTOP', 'antigravity.desktop'), ('OLDPWD', '/home/lya/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.107.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/antigravity.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/antigravity/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/antigravity/antigravity'), ('MANAGERPID', '996'), ('SYSTEMD_EXEC_PID', '1221'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '74877'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lya'), ('JOURNAL_STREAM', '8:18660'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lya-Default-string:@/tmp/.ICE-unix/1185,unix/lya-Default-string:/tmp/.ICE-unix/1185'), ('INVOCATION_ID', 'adc75ee05fd841069f1390ef73da376e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XLW4O3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0d998cf575.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lya/ros2_ws/install/sipeed_tof_ms_a010:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lya/ros2_ws/build/sipeed_tof_ms_a010'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lya/ros2_ws/install/sipeed_tof_ms_a010:/opt/ros/humble')]), 'shell': False}
+[0.099387] (-) TimerEvent: {}
+[0.121895] (sipeed_tof_ms_a010) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target publisher\x1b[0m\n'}
+[0.172906] (sipeed_tof_ms_a010) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/main.cc.o\x1b[0m\n'}
+[0.199526] (-) TimerEvent: {}
+[0.299985] (-) TimerEvent: {}
+[0.400493] (-) TimerEvent: {}
+[0.500978] (-) TimerEvent: {}
+[0.601474] (-) TimerEvent: {}
+[0.701958] (-) TimerEvent: {}
+[0.802465] (-) TimerEvent: {}
+[0.902950] (-) TimerEvent: {}
+[1.003459] (-) TimerEvent: {}
+[1.103983] (-) TimerEvent: {}
+[1.204485] (-) TimerEvent: {}
+[1.304988] (-) TimerEvent: {}
+[1.405548] (-) TimerEvent: {}
+[1.506028] (-) TimerEvent: {}
+[1.606444] (-) TimerEvent: {}
+[1.706883] (-) TimerEvent: {}
+[1.807294] (-) TimerEvent: {}
+[1.907718] (-) TimerEvent: {}
+[2.008195] (-) TimerEvent: {}
+[2.108588] (-) TimerEvent: {}
+[2.208989] (-) TimerEvent: {}
+[2.309399] (-) TimerEvent: {}
+[2.409895] (-) TimerEvent: {}
+[2.510421] (-) TimerEvent: {}
+[2.610850] (-) TimerEvent: {}
+[2.711263] (-) TimerEvent: {}
+[2.811701] (-) TimerEvent: {}
+[2.912173] (-) TimerEvent: {}
+[3.012587] (-) TimerEvent: {}
+[3.112973] (-) TimerEvent: {}
+[3.213264] (-) TimerEvent: {}
+[3.313641] (-) TimerEvent: {}
+[3.413892] (-) TimerEvent: {}
+[3.514176] (-) TimerEvent: {}
+[3.614513] (-) TimerEvent: {}
+[3.714900] (-) TimerEvent: {}
+[3.815246] (-) TimerEvent: {}
+[3.915680] (-) TimerEvent: {}
+[4.016132] (-) TimerEvent: {}
+[4.116544] (-) TimerEvent: {}
+[4.216954] (-) TimerEvent: {}
+[4.317451] (-) TimerEvent: {}
+[4.418028] (-) TimerEvent: {}
+[4.518394] (-) TimerEvent: {}
+[4.618681] (-) TimerEvent: {}
+[4.718969] (-) TimerEvent: {}
+[4.819245] (-) TimerEvent: {}
+[4.919578] (-) TimerEvent: {}
+[5.020049] (-) TimerEvent: {}
+[5.120461] (-) TimerEvent: {}
+[5.220889] (-) TimerEvent: {}
+[5.321353] (-) TimerEvent: {}
+[5.421787] (-) TimerEvent: {}
+[5.522332] (-) TimerEvent: {}
+[5.622752] (-) TimerEvent: {}
+[5.723180] (-) TimerEvent: {}
+[5.823501] (-) TimerEvent: {}
+[5.923811] (-) TimerEvent: {}
+[6.024146] (-) TimerEvent: {}
+[6.124457] (-) TimerEvent: {}
+[6.224741] (-) TimerEvent: {}
+[6.322959] (sipeed_tof_ms_a010) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:15\x1b[m\x1b[K:\n'}
+[6.323203] (sipeed_tof_ms_a010) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_struct.h:36:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids flexible array member \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.323286] (sipeed_tof_ms_a010) StderrLine: {'line': b'   36 |   uint8_t \x1b[01;35m\x1b[Kpayload\x1b[m\x1b[K[];\n'}
+[6.323343] (sipeed_tof_ms_a010) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.324800] (-) TimerEvent: {}
+[6.425089] (-) TimerEvent: {}
+[6.525461] (-) TimerEvent: {}
+[6.625846] (-) TimerEvent: {}
+[6.726221] (-) TimerEvent: {}
+[6.826669] (-) TimerEvent: {}
+[6.874087] (sipeed_tof_ms_a010) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SipeedTOF_MSA010_Publisher::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.874483] (sipeed_tof_ms_a010) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:228:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.874689] (sipeed_tof_ms_a010) StderrLine: {'line': b'  228 |     for (int j = 0; \x1b[01;35m\x1b[Kj < pcmsg.height\x1b[m\x1b[K; j++)\n'}
+[6.874862] (sipeed_tof_ms_a010) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.875017] (sipeed_tof_ms_a010) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:229:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.875185] (sipeed_tof_ms_a010) StderrLine: {'line': b'  229 |       for (int i = 0; \x1b[01;35m\x1b[Ki < pcmsg.width\x1b[m\x1b[K; i++) {\n'}
+[6.875318] (sipeed_tof_ms_a010) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.926780] (-) TimerEvent: {}
+[7.027129] (-) TimerEvent: {}
+[7.127429] (-) TimerEvent: {}
+[7.227726] (-) TimerEvent: {}
+[7.328014] (-) TimerEvent: {}
+[7.428397] (-) TimerEvent: {}
+[7.528860] (-) TimerEvent: {}
+[7.629265] (-) TimerEvent: {}
+[7.729657] (-) TimerEvent: {}
+[7.830073] (-) TimerEvent: {}
+[7.930491] (-) TimerEvent: {}
+[8.030917] (-) TimerEvent: {}
+[8.131250] (-) TimerEvent: {}
+[8.231560] (-) TimerEvent: {}
+[8.331869] (-) TimerEvent: {}
+[8.432186] (-) TimerEvent: {}
+[8.532463] (-) TimerEvent: {}
+[8.632755] (-) TimerEvent: {}
+[8.733113] (-) TimerEvent: {}
+[8.833467] (-) TimerEvent: {}
+[8.933808] (-) TimerEvent: {}
+[9.034175] (-) TimerEvent: {}
+[9.134525] (-) TimerEvent: {}
+[9.234885] (-) TimerEvent: {}
+[9.335290] (-) TimerEvent: {}
+[9.435623] (-) TimerEvent: {}
+[9.535945] (-) TimerEvent: {}
+[9.636162] (-) TimerEvent: {}
+[9.736369] (-) TimerEvent: {}
+[9.836563] (-) TimerEvent: {}
+[9.936796] (-) TimerEvent: {}
+[10.037094] (-) TimerEvent: {}
+[10.137425] (-) TimerEvent: {}
+[10.237736] (-) TimerEvent: {}
+[10.338057] (-) TimerEvent: {}
+[10.438367] (-) TimerEvent: {}
+[10.538673] (-) TimerEvent: {}
+[10.573927] (sipeed_tof_ms_a010) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable publisher\x1b[0m\n'}
+[10.638803] (-) TimerEvent: {}
+[10.739132] (-) TimerEvent: {}
+[10.800972] (sipeed_tof_ms_a010) StdoutLine: {'line': b'[100%] Built target publisher\n'}
+[10.810001] (sipeed_tof_ms_a010) CommandEnded: {'returncode': 0}
+[10.810898] (sipeed_tof_ms_a010) JobProgress: {'identifier': 'sipeed_tof_ms_a010', 'progress': 'install'}
+[10.816224] (sipeed_tof_ms_a010) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lya/ros2_ws/build/sipeed_tof_ms_a010'], 'cwd': '/home/lya/ros2_ws/build/sipeed_tof_ms_a010', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lya'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/antigravity/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('ANTIGRAVITY_CLI_ALIAS', 'agy'), ('HOME', '/home/lya'), ('CHROME_DESKTOP', 'antigravity.desktop'), ('OLDPWD', '/home/lya/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.107.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/antigravity.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/antigravity/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/antigravity/antigravity'), ('MANAGERPID', '996'), ('SYSTEMD_EXEC_PID', '1221'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '74877'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lya'), ('JOURNAL_STREAM', '8:18660'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lya-Default-string:@/tmp/.ICE-unix/1185,unix/lya-Default-string:/tmp/.ICE-unix/1185'), ('INVOCATION_ID', 'adc75ee05fd841069f1390ef73da376e'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XLW4O3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0d998cf575.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lya/ros2_ws/install/sipeed_tof_ms_a010:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lya/ros2_ws/build/sipeed_tof_ms_a010'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lya/ros2_ws/install/sipeed_tof_ms_a010:/opt/ros/humble')]), 'shell': False}
+[10.821759] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.821976] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher\n'}
+[10.822512] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Set runtime path of "/home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher" to ""\n'}
+[10.822663] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/package_run_dependencies/sipeed_tof_ms_a010\n'}
+[10.822801] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/parent_prefix_path/sipeed_tof_ms_a010\n'}
+[10.822858] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.sh\n'}
+[10.822911] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.dsv\n'}
+[10.822937] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.sh\n'}
+[10.822962] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.dsv\n'}
+[10.822990] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.bash\n'}
+[10.823016] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.sh\n'}
+[10.823047] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.zsh\n'}
+[10.823071] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.dsv\n'}
+[10.823094] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.dsv\n'}
+[10.823118] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/packages/sipeed_tof_ms_a010\n'}
+[10.823141] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config.cmake\n'}
+[10.823165] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config-version.cmake\n'}
+[10.823189] (sipeed_tof_ms_a010) StdoutLine: {'line': b'-- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.xml\n'}
+[10.824017] (sipeed_tof_ms_a010) CommandEnded: {'returncode': 0}
+[10.832591] (sipeed_tof_ms_a010) JobEnded: {'identifier': 'sipeed_tof_ms_a010', 'rc': 0}
+[10.833255] (-) EventReactorShutdown: {}

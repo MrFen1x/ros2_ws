@@ -1,0 +1,41 @@
+[0.024s] Invoking command in '/home/lya/ros2_ws/build/sipeed_tof_ms_a010': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lya/ros2_ws/build/sipeed_tof_ms_a010 -- -j16 -l16
+[0.116s] [35m[1mConsolidate compiler generated dependencies of target publisher[0m
+[0.165s] [ 20%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/main.cc.o[0m
+[6.320s] In file included from [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:15[m[K:
+[6.320s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_struct.h:36:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids flexible array member ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[6.320s]    36 |   uint8_t [01;35m[Kpayload[m[K[];
+[6.320s]       |           [01;35m[K^~~~~~~[m[K
+[6.851s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:[m[K In constructor ‘[01m[KSipeedTOF_MSA010_Publisher::SipeedTOF_MSA010_Publisher()[m[K’:
+[6.851s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:86:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktmp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.851s]    86 |     uint32_t [01;35m[Ktmp[m[K;
+[6.852s]       |              [01;35m[K^~~[m[K
+[6.864s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:[m[K In member function ‘[01m[Kvoid SipeedTOF_MSA010_Publisher::timer_callback()[m[K’:
+[6.864s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:192:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.864s]   192 |     for (int j = 0; [01;35m[Kj < pcmsg.height[m[K; j++)
+[6.864s]       |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[6.864s] [01m[K/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:193:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.864s]   193 |       for (int i = 0; [01;35m[Ki < pcmsg.width[m[K; i++) {
+[6.864s]       |                       [01;35m[K~~^~~~~~~~~~~~~[m[K
+[10.711s] [ 40%] [32m[1mLinking CXX executable publisher[0m
+[10.936s] [100%] Built target publisher
+[10.945s] Invoked command in '/home/lya/ros2_ws/build/sipeed_tof_ms_a010' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lya/ros2_ws/build/sipeed_tof_ms_a010 -- -j16 -l16
+[10.952s] Invoking command in '/home/lya/ros2_ws/build/sipeed_tof_ms_a010': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lya/ros2_ws/build/sipeed_tof_ms_a010
+[10.959s] -- Install configuration: "Release"
+[10.959s] -- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher
+[10.960s] -- Set runtime path of "/home/lya/ros2_ws/install/sipeed_tof_ms_a010/lib/sipeed_tof_ms_a010/publisher" to ""
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/package_run_dependencies/sipeed_tof_ms_a010
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/parent_prefix_path/sipeed_tof_ms_a010
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.sh
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/ament_prefix_path.dsv
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.sh
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/environment/path.dsv
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.bash
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.sh
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.zsh
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/local_setup.dsv
+[10.960s] -- Installing: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.dsv
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/ament_index/resource_index/packages/sipeed_tof_ms_a010
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config.cmake
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/cmake/sipeed_tof_ms_a010Config-version.cmake
+[10.960s] -- Up-to-date: /home/lya/ros2_ws/install/sipeed_tof_ms_a010/share/sipeed_tof_ms_a010/package.xml
+[10.962s] Invoked command in '/home/lya/ros2_ws/build/sipeed_tof_ms_a010' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lya/ros2_ws/build/sipeed_tof_ms_a010

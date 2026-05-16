@@ -1,0 +1,23 @@
+In file included from /home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_handle.cc:8:
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_struct.h:36:11: warning: ISO C++ forbids flexible array member ‘payload’ [-Wpedantic]
+   36 |   uint8_t payload[];
+      |           ^~~~~~~
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/serial.cc: In member function ‘void Serial::writeBytes(const std::vector<unsigned char>&) const’:
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/serial.cc:69:8: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   69 |   write(*(int *)this->priv, vec.cbegin().base(), vec.size());
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:15:
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/frame_struct.h:36:11: warning: ISO C++ forbids flexible array member ‘payload’ [-Wpedantic]
+   36 |   uint8_t payload[];
+      |           ^~~~~~~
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc: In constructor ‘SipeedTOF_MSA010_Publisher::SipeedTOF_MSA010_Publisher()’:
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:86:14: warning: unused variable ‘tmp’ [-Wunused-variable]
+   86 |     uint32_t tmp;
+      |              ^~~
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc: In member function ‘void SipeedTOF_MSA010_Publisher::timer_callback()’:
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:192:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘sensor_msgs::msg::PointCloud2_<std::allocator<void> >::_height_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  192 |     for (int j = 0; j < pcmsg.height; j++)
+      |                     ~~^~~~~~~~~~~~~~
+/home/lya/ros2_ws/src/MaixSense_ROS/sipeed_tof_ms_a010_ros/ros2/src/main.cc:193:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘sensor_msgs::msg::PointCloud2_<std::allocator<void> >::_width_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  193 |       for (int i = 0; i < pcmsg.width; i++) {
+      |                       ~~^~~~~~~~~~~~~
