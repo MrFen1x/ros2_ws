@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="supervisor">
+    <webots>
+        <plugin type="webots_lab2_pkg.lab2_plugin.Lab2Plugin" />
+    </webots>
+</robot>
