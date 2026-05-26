@@ -1,5 +1,6 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, TimerAction
+from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
@@ -11,6 +12,8 @@ def generate_launch_description():
     pkg_path = get_package_share_directory('my_robot_description')
     xacro_file = os.path.join(pkg_path, 'urdf', 'robot.urdf.xacro')
     rviz_config = os.path.join(pkg_path, 'rviz', 'config.rviz')
+
+    use_gui = LaunchConfiguration('use_gui')
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -33,11 +36,20 @@ def generate_launch_description():
             }]
         ),
 
-        # Joint State Publisher GUI
+        # Joint State Publisher GUI (запускается только если use_gui=true)
         Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
-            output='screen'
+            output='screen',
+            condition=IfCondition(use_gui)
+        ),
+
+        # Joint State Publisher (запускается без GUI, если use_gui=false)
+        Node(
+            package='joint_state_publisher',
+            executable='joint_state_publisher',
+            output='screen',
+            condition=UnlessCondition(use_gui)
         ),
 
         # RViz2 (запуск с задержкой чтобы robot_state_publisher успел стартовать)

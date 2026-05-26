@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<robot name="UR5E">
+    <webots>
+        <device reference="shoulder_pan_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+        <device reference="shoulder_lift_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+        <device reference="elbow_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+        <device reference="wrist_1_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+        <device reference="wrist_2_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+        <device reference="wrist_3_joint" type="Motor">
+            <ros>
+                <enabled>false</enabled>
+            </ros>
+        </device>
+
+        <plugin type="webots_lab2_pkg.lab2_plugin.Lab2Plugin" />
+    </webots>
+</robot>

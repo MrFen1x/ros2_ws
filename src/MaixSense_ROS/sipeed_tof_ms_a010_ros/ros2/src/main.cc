@@ -1,4 +1,4 @@
-#include <cv_bridge/cv_bridge.h>
+#include <cv_bridge/cv_bridge.hpp>
 
 #include <chrono>
 #include <iostream>
@@ -153,9 +153,9 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
     }
 
     publisher_depth =
-        this->create_publisher<sensor_msgs::msg::Image>("depth", 10);
+        this->create_publisher<sensor_msgs::msg::Image>("depth", rclcpp::SensorDataQoS());
     publisher_pointcloud =
-        this->create_publisher<sensor_msgs::msg::PointCloud2>("cloud", 10);
+        this->create_publisher<sensor_msgs::msg::PointCloud2>("cloud", rclcpp::SensorDataQoS());
     timer_ = this->create_wall_timer(
         30ms, std::bind(&SipeedTOF_MSA010_Publisher::timer_callback, this));
   }

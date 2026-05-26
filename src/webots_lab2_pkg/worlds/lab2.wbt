@@ -25,14 +25,12 @@ TexturedBackgroundLight {}
 Floor {
   size 10 10
 }
-Robot {
-  name "supervisor"
-  supervisor TRUE
-  controller "<extern>"
-}
 UR5e {
   translation 0 0 0
   name "UR5E"
+  staticBase TRUE
+  supervisor TRUE
+  controller "<extern>"
 }
 ConveyorBelt {
   translation 1.5 0 0.1

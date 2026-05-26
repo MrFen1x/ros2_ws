@@ -148,4 +148,55 @@
   <!-- Правая гусеница: смещена влево от центра (-base_width/2) на половину ширины гусеницы -->
   <xacro:track_assembly side="right" y_offset="${-base_width/2 - track_width/2}"/>
 
+  <!-- ==================== MaixSense A010 ToF Camera ==================== -->
+  <!-- Свойства камеры -->
+  <xacro:property name="tof_length" value="0.01"/>       <!-- Глубина (X), м (10 мм) -->
+  <xacro:property name="tof_width" value="0.034"/>       <!-- Ширина (Y), м (34 мм) -->
+  <xacro:property name="tof_height" value="0.023"/>      <!-- Высота (Z), м (23 мм) -->
+  <xacro:property name="tof_mass" value="0.010"/>        <!-- Масса 10 г -->
+
+  <!-- Гармоничный цвет для корпуса камеры (малиновый/черри) -->
+  <material name="crimson">
+    <color rgba="0.8 0.1 0.2 1.0"/>
+  </material>
+
+  <!-- Физический корпус камеры -->
+  <link name="tof_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${tof_length} ${tof_width} ${tof_height}"/>
+      </geometry>
+      <material name="crimson"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${tof_length} ${tof_width} ${tof_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${tof_mass}"/>
+      <inertia ixx="0.000001" ixy="0.0" ixz="0.0" iyy="0.000001" iyz="0.0" izz="0.000001"/>
+    </inertial>
+  </link>
+
+  <!-- Крепление камеры на переднем торце корпуса, по центру по Y и приподнято по Z (повернуто боком на 90 градусов по X) -->
+  <joint name="tof_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="tof_link"/>
+    <origin xyz="${base_length/2 + tof_length/2} 0 0.04" rpy="1.57079632679 0 0"/>
+  </joint>
+
+  <!-- Оптический кадр (frame_id для топиков ROS 2 depth и cloud) -->
+  <link name="tof"/>
+
+  <!-- Переход от стандартных координат робота к оптическим координатам камеры -->
+  <!-- Привязан напрямую к base_link для сохранения стандартной (неповернутой) ориентации данных -->
+  <joint name="tof_optical_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="tof"/>
+    <origin xyz="${base_length/2 + tof_length/2} 0 0.04" rpy="-1.57079632679 0 -1.57079632679"/>
+  </joint>
+
 </robot>
