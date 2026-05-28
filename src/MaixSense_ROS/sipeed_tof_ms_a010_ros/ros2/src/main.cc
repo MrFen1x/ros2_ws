@@ -162,10 +162,10 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
 
   void init_transports() {
     image_transport::ImageTransport it(shared_from_this());
-    publisher_depth = it.advertise("depth", rclcpp::SensorDataQoS().get_rmw_qos_profile());
+    publisher_depth = it.advertise("depth", 1);
 
     point_cloud_transport::PointCloudTransport pct(shared_from_this());
-    publisher_pointcloud = pct.advertise("cloud", rclcpp::SensorDataQoS().get_rmw_qos_profile());
+    publisher_pointcloud = pct.advertise("cloud", 1);
   }
 
  private:
