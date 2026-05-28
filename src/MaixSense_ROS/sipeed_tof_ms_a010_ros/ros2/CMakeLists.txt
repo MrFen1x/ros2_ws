@@ -26,11 +26,13 @@ find_package(sensor_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(OpenCV  REQUIRED)
 find_package(cv_bridge  REQUIRED)
+find_package(image_transport REQUIRED)
+find_package(point_cloud_transport REQUIRED)
 
 
 add_executable(publisher src/main.cc src/cJSON.c src/serial.cc src/frame_handle.cc)
 # target_link_libraries(publisher)
-ament_target_dependencies(publisher rclcpp std_msgs sensor_msgs OpenCV cv_bridge)
+ament_target_dependencies(publisher rclcpp std_msgs sensor_msgs OpenCV cv_bridge image_transport point_cloud_transport)
 install(TARGETS
   publisher
   DESTINATION lib/${PROJECT_NAME})

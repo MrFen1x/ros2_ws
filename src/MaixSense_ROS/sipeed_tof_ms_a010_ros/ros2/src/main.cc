@@ -10,6 +10,8 @@
 #include <std_msgs/msg/header.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <string>
+#include <image_transport/image_transport.hpp>
+#include <point_cloud_transport/point_cloud_transport.hpp>
 
 #include "cJSON.h"
 #include "frame_struct.h"
@@ -146,27 +148,30 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
       }
       std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
-    if (!disp_ok) {
+    if (!at_ok) {
       std::cerr << "Failed to set AT+DISP=3. Exiting." << std::endl;
       rclcpp::shutdown();
       return;
     }
 
-    publisher_depth =
-        this->create_publisher<sensor_msgs::msg::Image>("depth", rclcpp::SensorDataQoS());
-    publisher_pointcloud =
-        this->create_publisher<sensor_msgs::msg::PointCloud2>("cloud", rclcpp::SensorDataQoS());
     timer_ = this->create_wall_timer(
         30ms, std::bind(&SipeedTOF_MSA010_Publisher::timer_callback, this));
   }
 
   ~SipeedTOF_MSA010_Publisher() {}
 
+  void init_transports() {
+    image_transport::ImageTransport it(shared_from_this());
+    publisher_depth = it.advertise("depth", 1, rclcpp::SensorDataQoS().get_rmw_qos_profile());
+
+    point_cloud_transport::PointCloudTransport pct(shared_from_this());
+    publisher_pointcloud = pct.advertise("cloud", rclcpp::SensorDataQoS().get_rmw_qos_profile());
+  }
+
  private:
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr publisher_depth;
-  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr
-      publisher_pointcloud;
+  image_transport::Publisher publisher_depth;
+  point_cloud_transport::Publisher publisher_pointcloud;
 
   void timer_callback() {
     std::string s;
@@ -198,7 +203,7 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
         *cv_bridge::CvImage(header, "mono8", md).toImageMsg().get();
     RCLCPP_INFO(this->get_logger(), "Publishing: depth:%s",
                 sstream.str().c_str());
-    publisher_depth->publish(msg_depth);
+    publisher_depth.publish(msg_depth);
 
     sensor_msgs::msg::PointCloud2 pcmsg;
     pcmsg.header = header;
@@ -254,7 +259,7 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
             (color_r << 16) | (color_g << 8) | (color_b << 0);
         ptr += pcmsg.point_step;
       }
-    publisher_pointcloud->publish(pcmsg);
+    publisher_pointcloud.publish(pcmsg);
 
     free(f);
   }
@@ -328,7 +333,9 @@ class SipeedTOF_MSA010_Publisher : public rclcpp::Node {
 
 int main(int argc, char const *argv[]) {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<SipeedTOF_MSA010_Publisher>());
+  auto node = std::make_shared<SipeedTOF_MSA010_Publisher>();
+  node->init_transports();
+  rclcpp::spin(node);
   rclcpp::shutdown();
 
   return 0;
